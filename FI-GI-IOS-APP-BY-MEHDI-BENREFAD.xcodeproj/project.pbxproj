@@ -22,6 +22,8 @@
 		4F6873F9267A9021002D59A1 /* backgroundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6873F8267A9021002D59A1 /* backgroundService.swift */; };
 		4F6D1E43267B69FB00E5ED50 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D1E42267B69FB00E5ED50 /* TimerViewController.swift */; };
 		4F6D941F267B94B40031D8E7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D941E267B94B40031D8E7 /* MapViewController.swift */; };
+		4F6D9423267BB5BE0031D8E7 /* TextEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D9422267BB5BE0031D8E7 /* TextEditorViewController.swift */; };
+		4F6D9425267BB5FA0031D8E7 /* TextEditorResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D9424267BB5FA0031D8E7 /* TextEditorResultViewController.swift */; };
 		4F83D338267B9118000C4523 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F83D337267B9118000C4523 /* CoreLocation.framework */; };
 		E3BDDFEAD4461DBB0EF52889 /* Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2E82611E2A089485960F58 /* Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		4F6873F8267A9021002D59A1 /* backgroundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundService.swift; sourceTree = "<group>"; };
 		4F6D1E42267B69FB00E5ED50 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		4F6D941E267B94B40031D8E7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4F6D9422267BB5BE0031D8E7 /* TextEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorViewController.swift; sourceTree = "<group>"; };
+		4F6D9424267BB5FA0031D8E7 /* TextEditorResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorResultViewController.swift; sourceTree = "<group>"; };
 		4F83D337267B9118000C4523 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6880FF8A068C2C825A85F794 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig"; path = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig"; sourceTree = "<group>"; };
 		C5487F196CDD6D6F85A7290B /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig"; path = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,10 +146,11 @@
 		4F6873F5267A8BB7002D59A1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4F6D1E41267B69D600E5ED50 /* Timer */,
+				4F6709BE267B7BE500F49480 /* IMC */,
 				4F6D941D267B946F0031D8E7 /* map */,
 				4F6935BA267AE54E00F10BFE /* gessingGame */,
-				4F6709BE267B7BE500F49480 /* IMC */,
-				4F6D1E41267B69D600E5ED50 /* Timer */,
+				4F6D9421267BB56B0031D8E7 /* Text Editor */,
 				4F6873EF267A7C3C002D59A1 /* HomeViewController.swift */,
 				4F6873ED267A78AB002D59A1 /* SideMenuCell.swift */,
 				4F6873DD267A7547002D59A1 /* ViewController.swift */,
@@ -183,6 +188,15 @@
 				4F6D941E267B94B40031D8E7 /* MapViewController.swift */,
 			);
 			name = map;
+			sourceTree = "<group>";
+		};
+		4F6D9421267BB56B0031D8E7 /* Text Editor */ = {
+			isa = PBXGroup;
+			children = (
+				4F6D9422267BB5BE0031D8E7 /* TextEditorViewController.swift */,
+				4F6D9424267BB5FA0031D8E7 /* TextEditorResultViewController.swift */,
+			);
+			name = "Text Editor";
 			sourceTree = "<group>";
 		};
 		DBA48806F60D95F354289A68 /* Pods */ = {
@@ -310,7 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F6709C0267B7C1800F49480 /* IMCViewController.swift in Sources */,
+				4F6D9425267BB5FA0031D8E7 /* TextEditorResultViewController.swift in Sources */,
 				4F6873F0267A7C3C002D59A1 /* HomeViewController.swift in Sources */,
+				4F6D9423267BB5BE0031D8E7 /* TextEditorViewController.swift in Sources */,
 				4F6873F7267A8DA4002D59A1 /* GessingGameViewController.swift in Sources */,
 				4F6709C3267B7C8500F49480 /* IMC.swift in Sources */,
 				4F6873DE267A7547002D59A1 /* ViewController.swift in Sources */,
