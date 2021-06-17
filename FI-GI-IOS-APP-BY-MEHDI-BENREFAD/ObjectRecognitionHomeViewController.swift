@@ -62,6 +62,14 @@ class ObjectRecognitionHomeViewController: UIViewController {
     }
     //on declare le controlleur comme cibre de retour en arriere
     @IBAction func unwindBookToWelcome(segue:UIStoryboardSegue) { }
+    
+    
 
+    @IBAction func onSwipe(_ sender: UISwipeGestureRecognizer) {
+        if sender.state == .ended {
+            print("hello")
+            self.performSegue(withIdentifier: "recognitionToSideMenu", sender: nil)
+        }
+    }
     
 }

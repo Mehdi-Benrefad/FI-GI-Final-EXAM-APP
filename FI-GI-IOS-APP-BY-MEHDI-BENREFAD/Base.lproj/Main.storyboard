@@ -1084,13 +1084,17 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="u9U-gj-iCH"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="QxY-lN-jqw" appends="YES" id="mLX-cH-2Vt"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="vZ1-Ag-Z7j">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="fG7-TL-bbd">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="BT4-uB-QnY" kind="show" id="OW1-Yy-iZE"/>
+                                <segue destination="BT4-uB-QnY" kind="show" identifier="recognitionToSideMenu" id="OW1-Yy-iZE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1102,6 +1106,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aS-Xk-N2X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="QxY-lN-jqw">
+                    <connections>
+                        <action selector="onSwipe:" destination="6Uw-dO-IlN" id="QmM-rS-cxu"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="334.78260869565219" y="-2100"/>
         </scene>
