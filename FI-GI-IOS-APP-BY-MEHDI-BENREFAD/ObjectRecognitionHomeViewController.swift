@@ -11,7 +11,7 @@ import TransitionButton
 import AMPopTip
 
 class ObjectRecognitionHomeViewController: UIViewController {
-
+    
    
     @IBOutlet weak var isAComputer: UIButton!
     @IBOutlet weak var objectName: UIButton!
