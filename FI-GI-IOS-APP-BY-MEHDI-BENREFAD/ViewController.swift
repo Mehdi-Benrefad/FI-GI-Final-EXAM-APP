@@ -8,13 +8,64 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
 
+    var list = ["Home","Guessing Game","Timer"]
+    
+    @IBOutlet weak var tableViewSideMenu: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellule = list[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell", for: indexPath) as? SideMenuCell else {
+                   return UITableViewCell()
+               }
+          cell.configure(img: UIImage(), text: cellule)
+                return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           switch list[indexPath.row]{
+               case "Home" :
+                   print("hellooo")
+                   let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                   let newViewController = storyBoard.instantiateViewController(withIdentifier: "Homevc") as! UINavigationController
+                   newViewController.modalPresentationStyle = .fullScreen
+                   self.present(newViewController, animated: true, completion: nil)
+               
+               case "Guessing Game":
+                   let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                   let newViewController = storyBoard.instantiateViewController(withIdentifier: "Devinette") as! UINavigationController
+                   newViewController.modalPresentationStyle = .fullScreen
+                   self.present(newViewController, animated: true, completion: nil)
+               
+               case "Timer":
+                   let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                   let newViewController = storyBoard.instantiateViewController(withIdentifier: "Timer") as! UINavigationController
+                   newViewController.modalPresentationStyle = .fullScreen
+                   self.present(newViewController, animated: true, completion: nil)
+               
+               case "New Arrivals":
+                   let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                   let newViewController = storyBoard.instantiateViewController(withIdentifier: "NewArrivalsViewController") as! UINavigationController
+                   newViewController.modalPresentationStyle = .fullScreen
+                   self.present(newViewController, animated: true, completion: nil)
+           default:
+               print("other")
+           }
+    }
+    
 }
 

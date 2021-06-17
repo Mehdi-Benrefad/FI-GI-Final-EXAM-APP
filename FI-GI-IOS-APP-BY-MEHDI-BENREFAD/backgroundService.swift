@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class backgroundService{
+    
+    static var color : String {
+    
+        get{
+            return UserDefaults.standard.string(forKey: "color") ?? "white"
+        }
+        
+        set{
+            UserDefaults.standard.set(newValue, forKey: "color")
+        }
+    }
+}

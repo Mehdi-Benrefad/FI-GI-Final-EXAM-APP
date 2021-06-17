@@ -9,7 +9,9 @@
 import UIKit
 
 class SideMenuCell: UITableViewCell {
-
+    @IBOutlet weak var imageCell: UIImageView!
+    @IBOutlet weak var labelCell: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +21,11 @@ class SideMenuCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configure(img : UIImage , text : String){
+        self.imageCell.image = img
+        self.labelCell.text = text
     }
 
 }
