@@ -62,7 +62,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "IMC Calculator") as! UINavigationController
                    newViewController.modalPresentationStyle = .fullScreen
                    self.present(newViewController, animated: true, completion: nil)
-            
+             
             //Map Location
                 case "Map Location":
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
