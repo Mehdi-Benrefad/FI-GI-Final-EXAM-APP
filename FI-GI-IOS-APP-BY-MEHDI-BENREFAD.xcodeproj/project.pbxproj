@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F6709C0267B7C1800F49480 /* IMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6709BF267B7C1800F49480 /* IMCViewController.swift */; };
+		4F6709C3267B7C8500F49480 /* IMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6709C2267B7C8500F49480 /* IMC.swift */; };
+		4F6709C5267B7CDF00F49480 /* IMCResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6709C4267B7CDF00F49480 /* IMCResultViewController.swift */; };
 		4F6873DA267A7547002D59A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6873D9267A7547002D59A1 /* AppDelegate.swift */; };
 		4F6873DC267A7547002D59A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6873DB267A7547002D59A1 /* SceneDelegate.swift */; };
 		4F6873DE267A7547002D59A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6873DD267A7547002D59A1 /* ViewController.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F6709BF267B7C1800F49480 /* IMCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCViewController.swift; sourceTree = "<group>"; };
+		4F6709C2267B7C8500F49480 /* IMC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMC.swift; sourceTree = "<group>"; };
+		4F6709C4267B7CDF00F49480 /* IMCResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCResultViewController.swift; sourceTree = "<group>"; };
 		4F6873D6267A7547002D59A1 /* FI-GI-IOS-APP-BY-MEHDI-BENREFAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FI-GI-IOS-APP-BY-MEHDI-BENREFAD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6873D9267A7547002D59A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F6873DB267A7547002D59A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F6709BE267B7BE500F49480 /* IMC */ = {
+			isa = PBXGroup;
+			children = (
+				4F6709BF267B7C1800F49480 /* IMCViewController.swift */,
+				4F6709C4267B7CDF00F49480 /* IMCResultViewController.swift */,
+			);
+			name = IMC;
+			sourceTree = "<group>";
+		};
+		4F6709C1267B7C6700F49480 /* IMC */ = {
+			isa = PBXGroup;
+			children = (
+				4F6709C2267B7C8500F49480 /* IMC.swift */,
+			);
+			name = IMC;
+			sourceTree = "<group>";
+		};
 		4F6873CD267A7547002D59A1 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +118,7 @@
 		4F6873F3267A8B8B002D59A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F6709C1267B7C6700F49480 /* IMC */,
 				4F6935B9267AE4F200F10BFE /* gessingGame */,
 			);
 			name = Model;
@@ -113,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				4F6935BA267AE54E00F10BFE /* gessingGame */,
+				4F6709BE267B7BE500F49480 /* IMC */,
 				4F6D1E41267B69D600E5ED50 /* Timer */,
 				4F6873EF267A7C3C002D59A1 /* HomeViewController.swift */,
 				4F6873ED267A78AB002D59A1 /* SideMenuCell.swift */,
@@ -269,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6709C0267B7C1800F49480 /* IMCViewController.swift in Sources */,
 				4F6873F0267A7C3C002D59A1 /* HomeViewController.swift in Sources */,
 				4F6873F7267A8DA4002D59A1 /* GessingGameViewController.swift in Sources */,
+				4F6709C3267B7C8500F49480 /* IMC.swift in Sources */,
 				4F6873DE267A7547002D59A1 /* ViewController.swift in Sources */,
+				4F6709C5267B7CDF00F49480 /* IMCResultViewController.swift in Sources */,
 				4F6873F9267A9021002D59A1 /* backgroundService.swift in Sources */,
 				4F6D1E43267B69FB00E5ED50 /* TimerViewController.swift in Sources */,
 				4F6873DA267A7547002D59A1 /* AppDelegate.swift in Sources */,

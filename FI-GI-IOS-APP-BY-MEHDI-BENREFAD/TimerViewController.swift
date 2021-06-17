@@ -68,4 +68,10 @@ class TimerViewController: UIViewController {
            
        }
 
+    @IBAction func onSwipe(_ sender: UISwipeGestureRecognizer) {
+        if sender.state == .ended {
+                   print("hello")
+        self.performSegue(withIdentifier: "timerToSideMenu", sender: nil)
+               }
+    }
 }

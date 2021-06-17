@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         if sender.state == .ended {
                    print("hello")
         self.performSegue(withIdentifier: "showSideMenu", sender: nil)
-               }
+        }
     }
     
 }
