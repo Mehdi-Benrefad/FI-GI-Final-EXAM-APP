@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
 
-    var list = ["Home","Guessing Game","Timer","IMC Calculator"]
+    var list = ["Home","Guessing Game","Timer","IMC Calculator","Map Location"]
     
     @IBOutlet weak var tableViewSideMenu: UITableView!
     
@@ -62,6 +62,13 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "IMC Calculator") as! UINavigationController
                    newViewController.modalPresentationStyle = .fullScreen
                    self.present(newViewController, animated: true, completion: nil)
+            
+            //Map Location
+                case "Map Location":
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "Map Location") as! UINavigationController
+                    newViewController.modalPresentationStyle = .fullScreen
+                    self.present(newViewController, animated: true, completion: nil)
            default:
                print("other")
            }
