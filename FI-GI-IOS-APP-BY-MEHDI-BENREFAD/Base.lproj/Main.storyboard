@@ -22,7 +22,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-Zd-xzg">
                                 <rect key="frame" x="0.0" y="44" width="414" height="692"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.87056751943005184" green="0.87056751943005184" blue="0.87056751943005184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SideMenuCell" id="g3q-6m-Prj" customClass="SideMenuCell" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="90"/>
@@ -43,7 +43,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="0.86032626295336789" green="0.86032626295336789" blue="0.86032626295336789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imageCell" destination="oCE-6h-NXO" id="PTv-jO-9cf"/>
@@ -191,15 +191,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brs-m7-2ze">
-                                <rect key="frame" x="0.0" y="405" width="414" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="22"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp2-UB-FTt">
-                                <rect key="frame" x="97" y="452" width="221" height="71"/>
+                                <rect key="frame" x="97" y="504" width="221" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.11763454230000001" green="0.1176540628" blue="0.1176278964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
@@ -222,6 +215,13 @@
                                     <action selector="changeMode:" destination="cAp-cK-3b1" eventType="valueChanged" id="kkH-SL-7Ty"/>
                                 </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brs-m7-2ze">
+                                <rect key="frame" x="0.0" y="457" width="414" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="22"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -393,7 +393,7 @@
             </objects>
             <point key="canvasLocation" x="1179.7101449275362" y="852.71739130434787"/>
         </scene>
-        <!--TEST-->
+        <!--IMC-->
         <scene sceneID="Yjr-So-wp3">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="peT-dG-x9O" customClass="IMCViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
@@ -469,10 +469,20 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="LMy-Y6-oHh"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LMM-I2-GX7" appends="YES" id="UcT-Zc-yK4"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="TEST" id="7iX-Rn-0gd">
+                    <navigationItem key="navigationItem" title="IMC" id="7iX-Rn-0gd">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ldh-n8-WzK"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="bN0-Dy-XXD">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="BT4-uB-QnY" kind="show" identifier="IMCToSideMenu" id="XeE-tH-jVm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="poid" destination="YFc-2e-sIz" id="JFr-9n-orx"/>
@@ -480,6 +490,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zh-oX-KRv" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="LMM-I2-GX7">
+                    <connections>
+                        <action selector="onSwipe:" destination="peT-dG-x9O" id="nO5-sw-wnG"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="334.78260869565219" y="-642.39130434782612"/>
         </scene>
@@ -545,6 +560,6 @@
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Aci-pH-YDh"/>
+        <segue reference="0sf-7N-eG6"/>
     </inferredMetricsTieBreakers>
 </document>

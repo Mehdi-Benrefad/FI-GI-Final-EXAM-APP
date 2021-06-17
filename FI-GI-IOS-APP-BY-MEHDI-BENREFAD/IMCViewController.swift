@@ -41,4 +41,13 @@ class IMCViewController: UIViewController {
             //ce segue sera lance dans la methode valider en haut
         }
     }
+    
+    
+ 
+    @IBAction func onSwipe(_ sender: UISwipeGestureRecognizer) {
+        if sender.state == .ended {
+                   print("hello")
+        self.performSegue(withIdentifier: "IMCToSideMenu", sender: nil)
+        }
+    }
 }
