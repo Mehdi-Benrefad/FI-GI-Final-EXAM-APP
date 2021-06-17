@@ -14,6 +14,7 @@
 		4F059E91267BC49A009F5825 /* ObjectRecognitionHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F059E90267BC49A009F5825 /* ObjectRecognitionHomeViewController.swift */; };
 		4F059E94267BC56B009F5825 /* IsADesktopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F059E93267BC56B009F5825 /* IsADesktopViewController.swift */; };
 		4F059E96267BDD71009F5825 /* ObjectNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F059E95267BDD71009F5825 /* ObjectNameViewController.swift */; };
+		4F5ABD83267BE11600EBCB41 /* DominantObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5ABD82267BE11600EBCB41 /* DominantObjectViewController.swift */; };
 		4F6709C0267B7C1800F49480 /* IMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6709BF267B7C1800F49480 /* IMCViewController.swift */; };
 		4F6709C3267B7C8500F49480 /* IMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6709C2267B7C8500F49480 /* IMC.swift */; };
 		4F6709C5267B7CDF00F49480 /* IMCResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6709C4267B7CDF00F49480 /* IMCResultViewController.swift */; };
@@ -43,6 +44,7 @@
 		4F059E90267BC49A009F5825 /* ObjectRecognitionHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectRecognitionHomeViewController.swift; sourceTree = "<group>"; };
 		4F059E93267BC56B009F5825 /* IsADesktopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsADesktopViewController.swift; sourceTree = "<group>"; };
 		4F059E95267BDD71009F5825 /* ObjectNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectNameViewController.swift; sourceTree = "<group>"; };
+		4F5ABD82267BE11600EBCB41 /* DominantObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominantObjectViewController.swift; sourceTree = "<group>"; };
 		4F6709BF267B7C1800F49480 /* IMCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCViewController.swift; sourceTree = "<group>"; };
 		4F6709C2267B7C8500F49480 /* IMC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMC.swift; sourceTree = "<group>"; };
 		4F6709C4267B7CDF00F49480 /* IMCResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCResultViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				4F059E90267BC49A009F5825 /* ObjectRecognitionHomeViewController.swift */,
 				4F059E93267BC56B009F5825 /* IsADesktopViewController.swift */,
 				4F059E95267BDD71009F5825 /* ObjectNameViewController.swift */,
+				4F5ABD82267BE11600EBCB41 /* DominantObjectViewController.swift */,
 			);
 			name = "Objects Recognition";
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				4F059E89267BC1DC009F5825 /* MobileNetV2.mlmodel in Sources */,
 				4F6D9423267BB5BE0031D8E7 /* TextEditorViewController.swift in Sources */,
 				4F6873F7267A8DA4002D59A1 /* GessingGameViewController.swift in Sources */,
+				4F5ABD83267BE11600EBCB41 /* DominantObjectViewController.swift in Sources */,
 				4F059E94267BC56B009F5825 /* IsADesktopViewController.swift in Sources */,
 				4F6709C3267B7C8500F49480 /* IMC.swift in Sources */,
 				4F6873DE267A7547002D59A1 /* ViewController.swift in Sources */,

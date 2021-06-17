@@ -1045,6 +1045,9 @@
                                 <state key="normal" title="Dominant Object">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="cgh-m0-F48" kind="show" id="7de-zB-UPM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXq-qp-xuQ">
                                 <rect key="frame" x="55" y="177" width="305" height="56"/>
@@ -1221,6 +1224,51 @@
                 <exit id="G1c-6F-EAH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1914" y="-2100"/>
+        </scene>
+        <!--Dominant Object View Controller-->
+        <scene sceneID="nFJ-PW-oF0">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="cgh-m0-F48" customClass="DominantObjectViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i0d-NN-RFf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Fu-kH-Uho">
+                                <rect key="frame" x="20" y="87" width="374" height="432"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kV-Sg-ORh">
+                                <rect key="frame" x="20" y="562" width="374" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hUM-DO-R8H"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lmk-9m-pae">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark" catalog="system" id="z0g-f0-1L3">
+                            <connections>
+                                <segue destination="HLD-3v-m4O" kind="unwind" unwindAction="unwindBookToWelcomeWithSegue:" id="Al2-dQ-jEh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="ZN3-yq-Bpp">
+                            <connections>
+                                <action selector="cameraBTN:" destination="cgh-m0-F48" id="84Z-Nx-7nr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageSelected" destination="3Fu-kH-Uho" id="fd9-Or-Pmy"/>
+                        <outlet property="prediction" destination="1kV-Sg-ORh" id="BLz-Tz-v18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N7i-w3-v18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="HLD-3v-m4O" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="-2764"/>
         </scene>
     </scenes>
     <resources>
