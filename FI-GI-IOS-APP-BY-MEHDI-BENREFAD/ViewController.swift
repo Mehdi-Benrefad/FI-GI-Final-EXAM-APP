@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
 
-    var list = ["Home","Guessing Game","Timer","IMC Calculator","Text Editor","Map Location"]
+    var list = ["Home","Guessing Game","Timer","IMC Calculator","Text Editor","Object Recognition","Map Location"]
     
     @IBOutlet weak var tableViewSideMenu: UITableView!
     
@@ -76,6 +76,14 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
                     let newViewController = storyBoard.instantiateViewController(withIdentifier: "TextEditor") as! UINavigationController
                     newViewController.modalPresentationStyle = .fullScreen
                     self.present(newViewController, animated: true, completion: nil)
+            
+            //ObjectRecognition
+                case "Object Recognition":
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "ObjectRecognition") as! UINavigationController
+                    newViewController.modalPresentationStyle = .fullScreen
+                    self.present(newViewController, animated: true, completion: nil)
+            
            default:
                print("other")
            }

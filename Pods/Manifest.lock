@@ -1,16 +1,24 @@
 PODS:
+  - AMPopTip (4.5.3)
   - SideMenu (6.5.0)
+  - TransitionButton (0.5.3)
 
 DEPENDENCIES:
+  - AMPopTip
   - SideMenu
+  - TransitionButton
 
 SPEC REPOS:
   trunk:
+    - AMPopTip
     - SideMenu
+    - TransitionButton
 
 SPEC CHECKSUMS:
+  AMPopTip: 77eef4793d50709bef83825b72da4f501263b91d
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
 
-PODFILE CHECKSUM: 93b34480a22dc512850a4bf9d54074803d7c897c
+PODFILE CHECKSUM: 8942af044250e10e3c63c2370977791bfffdb0e3
 
 COCOAPODS: 1.10.1

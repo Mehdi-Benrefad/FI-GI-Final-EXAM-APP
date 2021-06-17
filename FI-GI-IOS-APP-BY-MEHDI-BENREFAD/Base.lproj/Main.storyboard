@@ -433,7 +433,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Poid:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ic-2N-DA9">
-                                <rect key="frame" x="85" y="263" width="44" height="20"/>
+                                <rect key="frame" x="85" y="263" width="83" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -1016,6 +1016,164 @@
             </objects>
             <point key="canvasLocation" x="2720" y="-1365"/>
         </scene>
+        <!--Object Recognition Home View Controller-->
+        <scene sceneID="vc0-kW-LJ4">
+            <objects>
+                <viewController id="6Uw-dO-IlN" customClass="ObjectRecognitionHomeViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="epP-zx-TZF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfe-wk-0cd">
+                                <rect key="frame" x="55" y="282" width="305" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                <state key="normal" title="Object Name">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwW-hG-UHa">
+                                <rect key="frame" x="55" y="385" width="305" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                <state key="normal" title="Dominant Object">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXq-qp-xuQ">
+                                <rect key="frame" x="55" y="177" width="305" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                <state key="normal" title="Is a Desktop Computer ?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iyz-Oa-M1e" kind="show" id="MTn-ZE-Ifr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2y-C3-bcm">
+                                <rect key="frame" x="55" y="488" width="305" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                <state key="normal" title="Number Prediction">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Object Recognition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0e-bo-44G">
+                                <rect key="frame" x="88" y="87" width="238" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="u9U-gj-iCH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vZ1-Ag-Z7j">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="fG7-TL-bbd">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="BT4-uB-QnY" kind="show" id="OW1-Yy-iZE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dominantObject" destination="vwW-hG-UHa" id="qAa-ki-Thk"/>
+                        <outlet property="isAComputer" destination="dXq-qp-xuQ" id="OyY-Ug-nkZ"/>
+                        <outlet property="numberPrediction" destination="D2y-C3-bcm" id="oFj-kR-WJb"/>
+                        <outlet property="objectName" destination="Kfe-wk-0cd" id="cyY-8a-ZeF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2aS-Xk-N2X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334.78260869565219" y="-2100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ia5-wr-kOq">
+            <objects>
+                <navigationController storyboardIdentifier="ObjectRecognition" automaticallyAdjustsScrollViewInsets="NO" id="bTV-nG-ZtK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FW2-Fo-Ea4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Uw-dO-IlN" kind="relationship" relationship="rootViewController" id="ob3-Zb-TfV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSZ-rX-pyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572.46376811594212" y="-2100"/>
+        </scene>
+        <!--IsA Desktop View Controller-->
+        <scene sceneID="lHW-uQ-dtu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="iyz-Oa-M1e" customClass="IsADesktopViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iVa-k3-IyI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-GK-XfS">
+                                <rect key="frame" x="20" y="558" width="374" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="H0W-fm-i0U"/>
+                                    <constraint firstAttribute="width" constant="374" id="MNP-oQ-ffG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6nL-PD-nuy">
+                                <rect key="frame" x="20" y="74" width="374" height="410"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="0W6-Ct-CRa"/>
+                                    <constraint firstAttribute="height" constant="410" id="UOc-kj-lBL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6nL-PD-nuy" firstAttribute="leading" secondItem="t7X-x1-tqa" secondAttribute="leading" constant="20" id="GLX-ay-m7H"/>
+                            <constraint firstItem="wBM-GK-XfS" firstAttribute="top" secondItem="6nL-PD-nuy" secondAttribute="bottom" constant="74" id="ahb-tu-cEV"/>
+                            <constraint firstItem="t7X-x1-tqa" firstAttribute="trailing" secondItem="6nL-PD-nuy" secondAttribute="trailing" constant="20" id="b5t-Fm-lP2"/>
+                            <constraint firstItem="6nL-PD-nuy" firstAttribute="top" secondItem="t7X-x1-tqa" secondAttribute="top" constant="30" id="dhY-P5-izz"/>
+                            <constraint firstItem="t7X-x1-tqa" firstAttribute="bottom" secondItem="wBM-GK-XfS" secondAttribute="bottom" constant="91" id="kWW-CU-RHF"/>
+                            <constraint firstItem="wBM-GK-XfS" firstAttribute="leading" secondItem="t7X-x1-tqa" secondAttribute="leading" constant="20" id="pMX-Un-piZ"/>
+                            <constraint firstItem="t7X-x1-tqa" firstAttribute="trailing" secondItem="wBM-GK-XfS" secondAttribute="trailing" constant="20" id="uHx-VW-BHW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t7X-x1-tqa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ECz-Hf-bhw">
+                        <barButtonItem key="leftBarButtonItem" title="X" image="xmark" catalog="system" id="iFX-Ki-6Q0">
+                            <connections>
+                                <segue destination="K5h-0U-z0M" kind="unwind" unwindAction="unwindBookToWelcomeWithSegue:" id="SYV-pj-DVu"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Oqk-Ak-S2V">
+                            <connections>
+                                <action selector="cameraBTN:" destination="iyz-Oa-M1e" id="LFQ-oA-Cyd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageSelect" destination="6nL-PD-nuy" id="kNM-aB-cj0"/>
+                        <outlet property="shoeLabel" destination="wBM-GK-XfS" id="D6N-PW-q4E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhG-oU-MCS" sceneMemberID="firstResponder"/>
+                <exit id="K5h-0U-z0M" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="-2100"/>
+        </scene>
     </scenes>
     <resources>
         <image name="evide" width="231" height="218"/>
@@ -1026,6 +1184,6 @@
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BYt-2e-cT5"/>
+        <segue reference="XeE-tH-jVm"/>
     </inferredMetricsTieBreakers>
 </document>

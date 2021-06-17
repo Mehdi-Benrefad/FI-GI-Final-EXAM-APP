@@ -5,6 +5,8 @@ target 'FI-GI-IOS-APP-BY-MEHDI-BENREFAD' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 pod 'SideMenu'
+pod 'TransitionButton'
+pod 'AMPopTip'
   # Pods for FI-GI-IOS-APP-BY-MEHDI-BENREFAD
 
 end

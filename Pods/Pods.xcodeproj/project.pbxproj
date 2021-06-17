@@ -3,34 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08B5B89F28224381711F45A680C292D9 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C723107D860DB31CABCD028704863BA8 /* SideMenu-dummy.m */; };
-		09A0A5D3733F69E93F553ABBCF02FB77 /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BE21FF7AAD7D19E6ED839F0804FC1 /* SideMenuTransitionController.swift */; };
-		27D830F1CAC60B99CC0A135F583BFFF2 /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DA75D7F8119ABA5A3EF4AB757FE0EF /* SideMenuPresentationController.swift */; };
-		2ED518A3FA8DCBE08E621AC5C32844A9 /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B007E87349E50118E13B294C1DF5CA0D /* SideMenuPushCoordinator.swift */; };
-		3518A2FD8C1A3C948091472A1DC86CFC /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E58B6CAF4FD39FF8576CAB7D11A687B /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3846AFE38D1B63A9F0D9073C4ABC6DAA /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B80BD863C174D5427612E5FC99ED1 /* SideMenuNavigationController.swift */; };
-		3E18B004D34ED5441A193684EEB25BD3 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1907B78B39DE0F0C6221B3F154AAC862 /* SideMenuPresentationStyle.swift */; };
-		4E88B70410F6837FBD463EA4B6C33155 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACD16025EBF0FAAFEC087DE312E58C8 /* Extensions.swift */; };
-		609846E6DDCB4DA5F039F457407CD8A0 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB14CE4583A9C372E10BF6D712639A0 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-dummy.m */; };
-		77AF2098DDCCAAE0CE4A20725C466905 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D16C168F52FDF8EC2C45F49A36F215C /* SideMenuManager.swift */; };
-		890FF25D0CCFF9BADECBA64DCCEFF4FF /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB9B2576E9F7BC25C5B4B3ED9D9275 /* SideMenuAnimationController.swift */; };
-		8C06632AA14D12278B1277AC0CC6A0B2 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29DE67A5AA1D16125206E5A037E259 /* SideMenuInteractionController.swift */; };
-		905A503F069C27E841BAD9F4EFD4F1AF /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F12E6E9DEC732642010364EE9795B /* Protected.swift */; };
-		C798DA148F7F666F393F2009DDF73E35 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435A692AE8CB71108BC3C8B3E424BE1 /* Initializable.swift */; };
-		C96A55C2A869A97AC4CA628A7F2A2A21 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7C515B3D13887A728A453D7099F17D /* UITableViewVibrantCell.swift */; };
-		D1BD7393C7934049B3E51D9C5A5CD8A0 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A8B5179015129C9DC09887F8A8E0F /* Print.swift */; };
-		D3D22BB8C279DC03EA91BFE3F5412477 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0EF1FE9720FBF7E95FDF1468E9464 /* Deprecations.swift */; };
-		D777716F0B6C0754B7B0230531743BC4 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAEDAD33E39B2C6517EE2C665A844ABA /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCA72B1A49A675AE425D33A97D263636 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F313925EFA1264F29E31F91EDE5187D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		027C7FA71AAA3C7BD9D865F65E91778B /* TransitionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC4968DFF4399D6994A240832419DE7 /* TransitionButton-dummy.m */; };
+		08B5B89F28224381711F45A680C292D9 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 719929713B9C53AB2188BCD7E3849B3C /* SideMenu-dummy.m */; };
+		0971065C85C3FD1ACDA6D61E9FDB51A9 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E58B6CAF4FD39FF8576CAB7D11A687B /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09A0A5D3733F69E93F553ABBCF02FB77 /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959CA601CA70359AE82001027DF40415 /* SideMenuTransitionController.swift */; };
+		27D830F1CAC60B99CC0A135F583BFFF2 /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CCAFE716EA80AA15E065FA1120810A /* SideMenuPresentationController.swift */; };
+		2ED518A3FA8DCBE08E621AC5C32844A9 /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7C63BAD9C285F90D5DDE8F685FB2B8 /* SideMenuPushCoordinator.swift */; };
+		32E11C68B7E380DAF57756919DFC2BB0 /* PopTip+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9813970FC148448693626F33450C9B /* PopTip+Transitions.swift */; };
+		3846AFE38D1B63A9F0D9073C4ABC6DAA /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B17FF33D0962F5704001D01CA1ADB /* SideMenuNavigationController.swift */; };
+		3E18B004D34ED5441A193684EEB25BD3 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEAAD9C1F7A70D0F3288DC025962714 /* SideMenuPresentationStyle.swift */; };
+		4E88B70410F6837FBD463EA4B6C33155 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAAD9B2C7B366C1CD393374A08F8CE3 /* Extensions.swift */; };
+		5559AADA8CD57A33CCB6516B670FEA8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		5CE944B24E92F75283808185B053CA33 /* PopTip+Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E7ADF8A078FEB705ED334C43508FC /* PopTip+Draw.swift */; };
+		5F4B18C14A0E355E6495D36CA31B07E2 /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9BF0935953F823ABC0DD55607A9CE /* TransitionButton.swift */; };
+		5F83DEF0A06BA6E25F409B568AD296C6 /* TransitionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9AD5B2D32C327383265CD6169F0FC9A /* TransitionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B711829635DE0124AAD400294679DA4 /* AMPopTip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFB9D3DEAB93920DF3572951CFB3A79 /* AMPopTip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CD744CE23989E0EDCA90B4D68A69B11 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30653802B74A8CDF2AD6D38F62896F8A /* SpinerLayer.swift */; };
+		6E86157A5F6DCBB1E3BFBD11E9ECB5F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		72BF723D108B345435C064473BB6ED40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		72D2E13B730A53711FE7C22B6ED19216 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB14CE4583A9C372E10BF6D712639A0 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-dummy.m */; };
+		77AF2098DDCCAAE0CE4A20725C466905 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE7F29C3B56FCCD6DC06A6AE94FFCC4 /* SideMenuManager.swift */; };
+		8493869A7A6C202D77C239D038D12C8B /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB149C43392A170B9D1D85A9B129228B /* CGRectExtension.swift */; };
+		85D5C597E5A1C66586CE08A4BFC7F885 /* PopTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2BD62DE41552F45BCDA773063EC9D0 /* PopTip.swift */; };
+		890FF25D0CCFF9BADECBA64DCCEFF4FF /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C909E64B42F70C07ABB507E846BFBD0 /* SideMenuAnimationController.swift */; };
+		8C06632AA14D12278B1277AC0CC6A0B2 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF0FDBE5EB4EC4D9F0B05CCFB5B82C /* SideMenuInteractionController.swift */; };
+		905A503F069C27E841BAD9F4EFD4F1AF /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB83E1C6D1FD351EEA515383F1A4479 /* Protected.swift */; };
+		AC9A14805175C5BD7C93CDAED29B45BE /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BEE18907C5362F1C86ACEA768ECE26 /* FadeTransition.swift */; };
+		C2F6E646900EED6A1D186A193E4E3C25 /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC849673951DD4123FE65BCC862A7DD8 /* CustomTransitionViewController.swift */; };
+		C798DA148F7F666F393F2009DDF73E35 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBBFA4DBC433D36E76BAA7DD610265A /* Initializable.swift */; };
+		C96A55C2A869A97AC4CA628A7F2A2A21 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D2F551ECC0FB6034175E047B49F9E /* UITableViewVibrantCell.swift */; };
+		D1BD7393C7934049B3E51D9C5A5CD8A0 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9899E5B4E7C62F22483C8EE06A2574 /* Print.swift */; };
+		D3D22BB8C279DC03EA91BFE3F5412477 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DABA8ABF63D453537DF4A3FA36DE7BE /* Deprecations.swift */; };
+		D777716F0B6C0754B7B0230531743BC4 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E84068490C304C675C5A28C8453127AB /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E68FCDC3550B6EE493A15BE22237576D /* AMPopTip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B45C4C5C516E68EFC81DC0AFE06621 /* AMPopTip-dummy.m */; };
+		F313925EFA1264F29E31F91EDE5187D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		FF6942EE1D6F3A3AE57012DED7B68AD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4D3883E8DC58339F4319D3E0762DD282 /* PBXContainerItemProxy */ = {
+		354D7A33DF9FC119B89351DD8C1020B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B974B55B3C5F71E53DF6070DC0CF6CF;
+			remoteInfo = AMPopTip;
+		};
+		6B5F0D43C606802C8C6EDEA7DC0B70DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E30FF5B0268E3027AF18D788DB9BB7E7;
+			remoteInfo = TransitionButton;
+		};
+		B9C926D5891287417178CEA5BB6BA470 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -40,48 +69,81 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B45C4C5C516E68EFC81DC0AFE06621 /* AMPopTip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMPopTip-dummy.m"; sourceTree = "<group>"; };
 		0A765DBECD155A04AC81C8662E86A2E1 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1907B78B39DE0F0C6221B3F154AAC862 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
+		0B4DF1A77C7E495568354CF67C2047FD /* AMPopTip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AMPopTip-Info.plist"; sourceTree = "<group>"; };
+		0C2BD62DE41552F45BCDA773063EC9D0 /* PopTip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopTip.swift; path = Source/PopTip.swift; sourceTree = "<group>"; };
+		0C909E64B42F70C07ABB507E846BFBD0 /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
+		15F9BEF56157897475012256A0F8FD2C /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		180E7ADF8A078FEB705ED334C43508FC /* PopTip+Draw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopTip+Draw.swift"; path = "Source/PopTip+Draw.swift"; sourceTree = "<group>"; };
+		19C5F22E6F16522E6A0CAD3448EF64D9 /* TransitionButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TransitionButton-Info.plist"; sourceTree = "<group>"; };
+		2761CF2BFEA78091CFB9AB07D081FA6B /* SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenu-Info.plist"; sourceTree = "<group>"; };
 		276A6229C9E11F5BC5AE988D979EBBE0 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig"; sourceTree = "<group>"; };
-		296BE21FF7AAD7D19E6ED839F0804FC1 /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
-		29DA75D7F8119ABA5A3EF4AB757FE0EF /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
 		2CE56EC3736D894C75F511F57C89DF38 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig"; sourceTree = "<group>"; };
 		2F99C79E33A0A5474107F4E3AA846853 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-acknowledgements.plist"; sourceTree = "<group>"; };
+		30653802B74A8CDF2AD6D38F62896F8A /* SpinerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinerLayer.swift; path = Source/SpinerLayer.swift; sourceTree = "<group>"; };
 		319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39731C041E2E77BC5245E8132FC071E0 /* SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenu-Info.plist"; sourceTree = "<group>"; };
+		3996F9DE3FF62682617F025B9538DE64 /* SideMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.debug.xcconfig; sourceTree = "<group>"; };
 		5469976029E9B87B20462D6BFEA0AA77 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-Info.plist"; sourceTree = "<group>"; };
 		5E58B6CAF4FD39FF8576CAB7D11A687B /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-umbrella.h"; sourceTree = "<group>"; };
-		639605EE872C890DF7392A3818475BB5 /* SideMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.release.xcconfig; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7D16C168F52FDF8EC2C45F49A36F215C /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		5F6BA03A0925860EA21A0CB5F550E9CB /* TransitionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TransitionButton.framework; path = TransitionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D6A8BA6E77D1148C271A4EF0374031 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		670280F9CC68BA39BCD054426FDF4888 /* SideMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.release.xcconfig; sourceTree = "<group>"; };
+		69452A09F03FE706E34E6C6CAD9464F9 /* AMPopTip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AMPopTip.modulemap; sourceTree = "<group>"; };
+		6B9813970FC148448693626F33450C9B /* PopTip+Transitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopTip+Transitions.swift"; path = "Source/PopTip+Transitions.swift"; sourceTree = "<group>"; };
+		6DABA8ABF63D453537DF4A3FA36DE7BE /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
+		70000387ABF90BACA320E604C101207F /* AMPopTip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMPopTip.release.xcconfig; sourceTree = "<group>"; };
+		719929713B9C53AB2188BCD7E3849B3C /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		7976E097B7A486EC49054E546E5D616D /* TransitionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-prefix.pch"; sourceTree = "<group>"; };
+		79B43D7E1D6151B0A7516FAE5AE3BD09 /* TransitionButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionButton.debug.xcconfig; sourceTree = "<group>"; };
+		7D9899E5B4E7C62F22483C8EE06A2574 /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
+		7DB83E1C6D1FD351EEA515383F1A4479 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
+		80F9BF0935953F823ABC0DD55607A9CE /* TransitionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionButton.swift; path = Source/TransitionButton.swift; sourceTree = "<group>"; };
+		844D2F551ECC0FB6034175E047B49F9E /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		86CCAFE716EA80AA15E065FA1120810A /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
 		8AB14CE4583A9C372E10BF6D712639A0 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-dummy.m"; sourceTree = "<group>"; };
-		8E4B80BD863C174D5427612E5FC99ED1 /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
+		8C95D72193B8B0961AE8D60FA1D3F419 /* AMPopTip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AMPopTip.framework; path = AMPopTip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7C63BAD9C285F90D5DDE8F685FB2B8 /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
+		8EBBFA4DBC433D36E76BAA7DD610265A /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
+		959CA601CA70359AE82001027DF40415 /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
+		9CAAD9B2C7B366C1CD393374A08F8CE3 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E1F12E6E9DEC732642010364EE9795B /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
 		9E792E1FA37CCFC8834392A138BA17BF /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-frameworks.sh"; sourceTree = "<group>"; };
-		AE8A8B5179015129C9DC09887F8A8E0F /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
-		B007E87349E50118E13B294C1DF5CA0D /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
-		B435A692AE8CB71108BC3C8B3E424BE1 /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
-		B72C4994EA5E6719DEB95FF5415FB140 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		B741F11F3B190DB6E66E566ECF54FC35 /* SideMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.debug.xcconfig; sourceTree = "<group>"; };
-		BA7C515B3D13887A728A453D7099F17D /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
-		BB7389E65A56B13A2B00F28FCEF9794F /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		BF29DE67A5AA1D16125206E5A037E259 /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
-		C5E0EF1FE9720FBF7E95FDF1468E9464 /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
-		C723107D860DB31CABCD028704863BA8 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
-		CACD16025EBF0FAAFEC087DE312E58C8 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
+		A14FF06031EA8F70827F14B84B883E6A /* TransitionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TransitionButton.modulemap; sourceTree = "<group>"; };
+		A9AD5B2D32C327383265CD6169F0FC9A /* TransitionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-umbrella.h"; sourceTree = "<group>"; };
+		AB149C43392A170B9D1D85A9B129228B /* CGRectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = Source/CGRectExtension.swift; sourceTree = "<group>"; };
+		ABEAAD9C1F7A70D0F3288DC025962714 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
+		AC849673951DD4123FE65BCC862A7DD8 /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTransitionViewController.swift; path = Source/CustomTransitionViewController.swift; sourceTree = "<group>"; };
+		B50284F881F7746C8E3B66E562FA97AA /* TransitionButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionButton.release.xcconfig; sourceTree = "<group>"; };
+		B5DF0FDBE5EB4EC4D9F0B05CCFB5B82C /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
+		BAC4968DFF4399D6994A240832419DE7 /* TransitionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionButton-dummy.m"; sourceTree = "<group>"; };
+		BEFB9D3DEAB93920DF3572951CFB3A79 /* AMPopTip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMPopTip-umbrella.h"; sourceTree = "<group>"; };
+		CA7B17FF33D0962F5704001D01CA1ADB /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
 		CDA48E4EA91F15F25CE35501371E1177 /* Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEDB9B2576E9F7BC25C5B4B3ED9D9275 /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DD598A57DAB8F05D5DA659E7C66C2D0B /* AMPopTip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMPopTip-prefix.pch"; sourceTree = "<group>"; };
+		DDE7F29C3B56FCCD6DC06A6AE94FFCC4 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
 		E4CF696D04092DDAACEDDAD99187AF37 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.modulemap"; sourceTree = "<group>"; };
-		FAEDAD33E39B2C6517EE2C665A844ABA /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		E84068490C304C675C5A28C8453127AB /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F6BEE18907C5362F1C86ACEA768ECE26 /* FadeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = Source/FadeTransition.swift; sourceTree = "<group>"; };
+		FB1ECD2952F080845A37C768D0B9AEFE /* AMPopTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMPopTip.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		60E8C7870878654E9CC22A4923A18323 /* Frameworks */ = {
+		7496AA0F9C0AFCFDB7C9AC94228777FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA72B1A49A675AE425D33A97D263636 /* Foundation.framework in Frameworks */,
+				5559AADA8CD57A33CCB6516B670FEA8A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C3A90135AFD0A0E20A6F562950EDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72BF723D108B345435C064473BB6ED40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,70 +155,108 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6254D7F09D1D67099DBD37D879DE85B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E86157A5F6DCBB1E3BFBD11E9ECB5F9 /* Foundation.framework in Frameworks */,
+				FF6942EE1D6F3A3AE57012DED7B68AD4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		065FF3C006D1A5171BF836C6AA535B96 /* Support Files */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B72C4994EA5E6719DEB95FF5415FB140 /* SideMenu.modulemap */,
-				C723107D860DB31CABCD028704863BA8 /* SideMenu-dummy.m */,
-				39731C041E2E77BC5245E8132FC071E0 /* SideMenu-Info.plist */,
-				BB7389E65A56B13A2B00F28FCEF9794F /* SideMenu-prefix.pch */,
-				FAEDAD33E39B2C6517EE2C665A844ABA /* SideMenu-umbrella.h */,
-				B741F11F3B190DB6E66E566ECF54FC35 /* SideMenu.debug.xcconfig */,
-				639605EE872C890DF7392A3818475BB5 /* SideMenu.release.xcconfig */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EF9BF572A824C24B13CE3DAFE03DF67 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A14FF06031EA8F70827F14B84B883E6A /* TransitionButton.modulemap */,
+				BAC4968DFF4399D6994A240832419DE7 /* TransitionButton-dummy.m */,
+				19C5F22E6F16522E6A0CAD3448EF64D9 /* TransitionButton-Info.plist */,
+				7976E097B7A486EC49054E546E5D616D /* TransitionButton-prefix.pch */,
+				A9AD5B2D32C327383265CD6169F0FC9A /* TransitionButton-umbrella.h */,
+				79B43D7E1D6151B0A7516FAE5AE3BD09 /* TransitionButton.debug.xcconfig */,
+				B50284F881F7746C8E3B66E562FA97AA /* TransitionButton.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SideMenu";
+			path = "../Target Support Files/TransitionButton";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		3A0AD6870006FF293AA107F83968F9B7 /* TransitionButton */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				AB149C43392A170B9D1D85A9B129228B /* CGRectExtension.swift */,
+				AC849673951DD4123FE65BCC862A7DD8 /* CustomTransitionViewController.swift */,
+				F6BEE18907C5362F1C86ACEA768ECE26 /* FadeTransition.swift */,
+				30653802B74A8CDF2AD6D38F62896F8A /* SpinerLayer.swift */,
+				80F9BF0935953F823ABC0DD55607A9CE /* TransitionButton.swift */,
+				1EF9BF572A824C24B13CE3DAFE03DF67 /* Support Files */,
 			);
-			name = iOS;
+			name = TransitionButton;
+			path = TransitionButton;
 			sourceTree = "<group>";
 		};
-		67E106677E0888264403B3CA16A38509 /* Products */ = {
+		4D23CA133DF841E189B2A49D588EE2E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				8C95D72193B8B0961AE8D60FA1D3F419 /* AMPopTip.framework */,
 				CDA48E4EA91F15F25CE35501371E1177 /* Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework */,
 				319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */,
+				5F6BA03A0925860EA21A0CB5F550E9CB /* TransitionButton.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D34FA07FC7B9431D63786FEAE0BA6F5 /* Pods */ = {
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				860B550C527090E352A83A65C289DBC3 /* SideMenu */,
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		860B550C527090E352A83A65C289DBC3 /* SideMenu */ = {
+		62DCBDB11E89DD366F0629AC5A97CC9A /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				C5E0EF1FE9720FBF7E95FDF1468E9464 /* Deprecations.swift */,
-				CACD16025EBF0FAAFEC087DE312E58C8 /* Extensions.swift */,
-				B435A692AE8CB71108BC3C8B3E424BE1 /* Initializable.swift */,
-				AE8A8B5179015129C9DC09887F8A8E0F /* Print.swift */,
-				9E1F12E6E9DEC732642010364EE9795B /* Protected.swift */,
-				DEDB9B2576E9F7BC25C5B4B3ED9D9275 /* SideMenuAnimationController.swift */,
-				BF29DE67A5AA1D16125206E5A037E259 /* SideMenuInteractionController.swift */,
-				7D16C168F52FDF8EC2C45F49A36F215C /* SideMenuManager.swift */,
-				8E4B80BD863C174D5427612E5FC99ED1 /* SideMenuNavigationController.swift */,
-				29DA75D7F8119ABA5A3EF4AB757FE0EF /* SideMenuPresentationController.swift */,
-				1907B78B39DE0F0C6221B3F154AAC862 /* SideMenuPresentationStyle.swift */,
-				B007E87349E50118E13B294C1DF5CA0D /* SideMenuPushCoordinator.swift */,
-				296BE21FF7AAD7D19E6ED839F0804FC1 /* SideMenuTransitionController.swift */,
-				BA7C515B3D13887A728A453D7099F17D /* UITableViewVibrantCell.swift */,
-				065FF3C006D1A5171BF836C6AA535B96 /* Support Files */,
+				6DABA8ABF63D453537DF4A3FA36DE7BE /* Deprecations.swift */,
+				9CAAD9B2C7B366C1CD393374A08F8CE3 /* Extensions.swift */,
+				8EBBFA4DBC433D36E76BAA7DD610265A /* Initializable.swift */,
+				7D9899E5B4E7C62F22483C8EE06A2574 /* Print.swift */,
+				7DB83E1C6D1FD351EEA515383F1A4479 /* Protected.swift */,
+				0C909E64B42F70C07ABB507E846BFBD0 /* SideMenuAnimationController.swift */,
+				B5DF0FDBE5EB4EC4D9F0B05CCFB5B82C /* SideMenuInteractionController.swift */,
+				DDE7F29C3B56FCCD6DC06A6AE94FFCC4 /* SideMenuManager.swift */,
+				CA7B17FF33D0962F5704001D01CA1ADB /* SideMenuNavigationController.swift */,
+				86CCAFE716EA80AA15E065FA1120810A /* SideMenuPresentationController.swift */,
+				ABEAAD9C1F7A70D0F3288DC025962714 /* SideMenuPresentationStyle.swift */,
+				8D7C63BAD9C285F90D5DDE8F685FB2B8 /* SideMenuPushCoordinator.swift */,
+				959CA601CA70359AE82001027DF40415 /* SideMenuTransitionController.swift */,
+				844D2F551ECC0FB6034175E047B49F9E /* UITableViewVibrantCell.swift */,
+				9A76DAD1CE0FEBD8F7291AA8CDAE7EC5 /* Support Files */,
 			);
 			name = SideMenu;
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		7409027F43D820F3BDC798BAE6F6A12A /* AMPopTip */ = {
+			isa = PBXGroup;
+			children = (
+				0C2BD62DE41552F45BCDA773063EC9D0 /* PopTip.swift */,
+				180E7ADF8A078FEB705ED334C43508FC /* PopTip+Draw.swift */,
+				6B9813970FC148448693626F33450C9B /* PopTip+Transitions.swift */,
+				B11219FB5F07A7C6F1970E983CC9BC8B /* Support Files */,
+			);
+			name = AMPopTip;
+			path = AMPopTip;
 			sourceTree = "<group>";
 		};
 		926FE69FB2332C3FF7BA10A158BD90FD /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD */ = {
@@ -176,23 +276,55 @@
 			path = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD";
 			sourceTree = "<group>";
 		};
+		9A76DAD1CE0FEBD8F7291AA8CDAE7EC5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60D6A8BA6E77D1148C271A4EF0374031 /* SideMenu.modulemap */,
+				719929713B9C53AB2188BCD7E3849B3C /* SideMenu-dummy.m */,
+				2761CF2BFEA78091CFB9AB07D081FA6B /* SideMenu-Info.plist */,
+				15F9BEF56157897475012256A0F8FD2C /* SideMenu-prefix.pch */,
+				E84068490C304C675C5A28C8453127AB /* SideMenu-umbrella.h */,
+				3996F9DE3FF62682617F025B9538DE64 /* SideMenu.debug.xcconfig */,
+				670280F9CC68BA39BCD054426FDF4888 /* SideMenu.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
+			sourceTree = "<group>";
+		};
+		B11219FB5F07A7C6F1970E983CC9BC8B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69452A09F03FE706E34E6C6CAD9464F9 /* AMPopTip.modulemap */,
+				00B45C4C5C516E68EFC81DC0AFE06621 /* AMPopTip-dummy.m */,
+				0B4DF1A77C7E495568354CF67C2047FD /* AMPopTip-Info.plist */,
+				DD598A57DAB8F05D5DA659E7C66C2D0B /* AMPopTip-prefix.pch */,
+				BEFB9D3DEAB93920DF3572951CFB3A79 /* AMPopTip-umbrella.h */,
+				FB1ECD2952F080845A37C768D0B9AEFE /* AMPopTip.debug.xcconfig */,
+				70000387ABF90BACA320E604C101207F /* AMPopTip.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AMPopTip";
+			sourceTree = "<group>";
+		};
+		B8BC6158B678369FCBF01B0415D9830A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7409027F43D820F3BDC798BAE6F6A12A /* AMPopTip */,
+				62DCBDB11E89DD366F0629AC5A97CC9A /* SideMenu */,
+				3A0AD6870006FF293AA107F83968F9B7 /* TransitionButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				7D34FA07FC7B9431D63786FEAE0BA6F5 /* Pods */,
-				67E106677E0888264403B3CA16A38509 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				B8BC6158B678369FCBF01B0415D9830A /* Pods */,
+				4D23CA133DF841E189B2A49D588EE2E2 /* Products */,
 				E7CF3A0C28B0AA643BA53EBC0E4B2BA1 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E7CF3A0C28B0AA643BA53EBC0E4B2BA1 /* Targets Support Files */ = {
@@ -214,11 +346,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E217CBFC66E929BD32AB76092B89F014 /* Headers */ = {
+		3DFC75B2FDBE15AAC8DF48F4F9CAF476 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3518A2FD8C1A3C948091472A1DC86CFC /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-umbrella.h in Headers */,
+				6B711829635DE0124AAD400294679DA4 /* AMPopTip-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52242B9CAC06555B10502FE7A9A3D12 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F83DEF0A06BA6E25F409B568AD296C6 /* TransitionButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D39E8806F6A1C451CEF488547BD70C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0971065C85C3FD1ACDA6D61E9FDB51A9 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,21 +375,41 @@
 /* Begin PBXNativeTarget section */
 		04803CFE6B82632D69EB37118A797FDC /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E62EE684B08BCB43A2440A099296CE34 /* Build configuration list for PBXNativeTarget "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD" */;
+			buildConfigurationList = 8E5991C3B153504FC725C76EBEAEB89F /* Build configuration list for PBXNativeTarget "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD" */;
 			buildPhases = (
-				E217CBFC66E929BD32AB76092B89F014 /* Headers */,
-				D929D648675093010071B1F4CC449834 /* Sources */,
-				60E8C7870878654E9CC22A4923A18323 /* Frameworks */,
-				317FF12196D68AACD17D3C56A22F461C /* Resources */,
+				E1D39E8806F6A1C451CEF488547BD70C /* Headers */,
+				A44981A5509C4CE598CCF4FED8EB1FB4 /* Sources */,
+				89C3A90135AFD0A0E20A6F562950EDC1 /* Frameworks */,
+				4534E60A9325F1E7E47CF17554D41D23 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E7E7F8801A9943E3303D23D7D40AD431 /* PBXTargetDependency */,
+				F7B38D9870B4C6BA19A7BEEC7ABE77FC /* PBXTargetDependency */,
+				4298183F298CC01924742B7EF69D7A71 /* PBXTargetDependency */,
+				E8B97D55A3A7533E7337C17C6099ECCA /* PBXTargetDependency */,
 			);
 			name = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD";
 			productName = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD";
 			productReference = CDA48E4EA91F15F25CE35501371E1177 /* Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0B974B55B3C5F71E53DF6070DC0CF6CF /* AMPopTip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A879FE025A74D62A8577AB2E59ADF0 /* Build configuration list for PBXNativeTarget "AMPopTip" */;
+			buildPhases = (
+				3DFC75B2FDBE15AAC8DF48F4F9CAF476 /* Headers */,
+				6478C237A8BADB27997BC15995B3507E /* Sources */,
+				7496AA0F9C0AFCFDB7C9AC94228777FD /* Frameworks */,
+				4D0FBE764F63D49C4492EED3F2537384 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMPopTip;
+			productName = AMPopTip;
+			productReference = 8C95D72193B8B0961AE8D60FA1D3F419 /* AMPopTip.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */ = {
@@ -262,6 +430,24 @@
 			productReference = 319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E30FF5B0268E3027AF18D788DB9BB7E7 /* TransitionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6C59D404DDBAFD4B5120141C22D8FA /* Build configuration list for PBXNativeTarget "TransitionButton" */;
+			buildPhases = (
+				D52242B9CAC06555B10502FE7A9A3D12 /* Headers */,
+				4BD1290F068C338E45EB4F11D675ADA8 /* Sources */,
+				E6254D7F09D1D67099DBD37D879DE85B /* Frameworks */,
+				ED4D7D85230DDC7DC0C05FCB1F90AA77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransitionButton;
+			productName = TransitionButton;
+			productReference = 5F6BA03A0925860EA21A0CB5F550E9CB /* TransitionButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -272,7 +458,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -280,18 +466,27 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 67E106677E0888264403B3CA16A38509 /* Products */;
+			productRefGroup = 4D23CA133DF841E189B2A49D588EE2E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				0B974B55B3C5F71E53DF6070DC0CF6CF /* AMPopTip */,
 				04803CFE6B82632D69EB37118A797FDC /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD */,
 				C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */,
+				E30FF5B0268E3027AF18D788DB9BB7E7 /* TransitionButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		317FF12196D68AACD17D3C56A22F461C /* Resources */ = {
+		4534E60A9325F1E7E47CF17554D41D23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0FBE764F63D49C4492EED3F2537384 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,9 +500,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED4D7D85230DDC7DC0C05FCB1F90AA77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4BD1290F068C338E45EB4F11D675ADA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8493869A7A6C202D77C239D038D12C8B /* CGRectExtension.swift in Sources */,
+				C2F6E646900EED6A1D186A193E4E3C25 /* CustomTransitionViewController.swift in Sources */,
+				AC9A14805175C5BD7C93CDAED29B45BE /* FadeTransition.swift in Sources */,
+				6CD744CE23989E0EDCA90B4D68A69B11 /* SpinerLayer.swift in Sources */,
+				027C7FA71AAA3C7BD9D865F65E91778B /* TransitionButton-dummy.m in Sources */,
+				5F4B18C14A0E355E6495D36CA31B07E2 /* TransitionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6478C237A8BADB27997BC15995B3507E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68FCDC3550B6EE493A15BE22237576D /* AMPopTip-dummy.m in Sources */,
+				5CE944B24E92F75283808185B053CA33 /* PopTip+Draw.swift in Sources */,
+				32E11C68B7E380DAF57756919DFC2BB0 /* PopTip+Transitions.swift in Sources */,
+				85D5C597E5A1C66586CE08A4BFC7F885 /* PopTip.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B7A6B51F5DD73DE3F3F294B1BF713BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,29 +556,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D929D648675093010071B1F4CC449834 /* Sources */ = {
+		A44981A5509C4CE598CCF4FED8EB1FB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				609846E6DDCB4DA5F039F457407CD8A0 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-dummy.m in Sources */,
+				72D2E13B730A53711FE7C22B6ED19216 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E7E7F8801A9943E3303D23D7D40AD431 /* PBXTargetDependency */ = {
+		4298183F298CC01924742B7EF69D7A71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SideMenu;
 			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
-			targetProxy = 4D3883E8DC58339F4319D3E0762DD282 /* PBXContainerItemProxy */;
+			targetProxy = B9C926D5891287417178CEA5BB6BA470 /* PBXContainerItemProxy */;
+		};
+		E8B97D55A3A7533E7337C17C6099ECCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionButton;
+			target = E30FF5B0268E3027AF18D788DB9BB7E7 /* TransitionButton */;
+			targetProxy = 6B5F0D43C606802C8C6EDEA7DC0B70DA /* PBXContainerItemProxy */;
+		};
+		F7B38D9870B4C6BA19A7BEEC7ABE77FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AMPopTip;
+			target = 0B974B55B3C5F71E53DF6070DC0CF6CF /* AMPopTip */;
+			targetProxy = 354D7A33DF9FC119B89351DD8C1020B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0993236FE5ED32A7B578BA63BF33FEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 276A6229C9E11F5BC5AE988D979EBBE0 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0FC98422908F1DD0D387A15F641DABCA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 639605EE872C890DF7392A3818475BB5 /* SideMenu.release.xcconfig */;
+			baseConfigurationReference = 670280F9CC68BA39BCD054426FDF4888 /* SideMenu.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -454,7 +730,7 @@
 		};
 		296B6A122D4DDB50F57AD87F217DE7A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B741F11F3B190DB6E66E566ECF54FC35 /* SideMenu.debug.xcconfig */;
+			baseConfigurationReference = 3996F9DE3FF62682617F025B9538DE64 /* SideMenu.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -549,7 +825,112 @@
 			};
 			name = Release;
 		};
-		74E59B32692A07E07D51ADE09E648D45 /* Debug */ = {
+		3BC5D6932213FCCA3D7A9114FB8FB841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B43D7E1D6151B0A7516FAE5AE3BD09 /* TransitionButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionButton/TransitionButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				PRODUCT_MODULE_NAME = TransitionButton;
+				PRODUCT_NAME = TransitionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6CBF7B19C4AA29830389870BE935DB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70000387ABF90BACA320E604C101207F /* AMPopTip.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AMPopTip/AMPopTip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMPopTip/AMPopTip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AMPopTip/AMPopTip.modulemap";
+				PRODUCT_MODULE_NAME = AMPopTip;
+				PRODUCT_NAME = AMPopTip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7BC54CB8B39B534F5D274AECCBA4BDB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B50284F881F7746C8E3B66E562FA97AA /* TransitionButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionButton/TransitionButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				PRODUCT_MODULE_NAME = TransitionButton;
+				PRODUCT_NAME = TransitionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9AD4569F237A696EB9511E00401AFC5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CE56EC3736D894C75F511F57C89DF38 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig */;
 			buildSettings = {
@@ -586,11 +967,10 @@
 			};
 			name = Debug;
 		};
-		C864A2412B183E256CE4911FF86FCF13 /* Release */ = {
+		D99459BBA534F09E72EA12AFE839E908 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 276A6229C9E11F5BC5AE988D979EBBE0 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig */;
+			baseConfigurationReference = FB1ECD2952F080845A37C768D0B9AEFE /* AMPopTip.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -600,38 +980,54 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AMPopTip/AMPopTip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMPopTip/AMPopTip-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/AMPopTip/AMPopTip.modulemap";
+				PRODUCT_MODULE_NAME = AMPopTip;
+				PRODUCT_NAME = AMPopTip;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C6C59D404DDBAFD4B5120141C22D8FA /* Build configuration list for PBXNativeTarget "TransitionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC5D6932213FCCA3D7A9114FB8FB841 /* Debug */,
+				7BC54CB8B39B534F5D274AECCBA4BDB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				231528393B7084E13F97FF9EF804A1C0 /* Debug */,
 				353D2EB3545D27343B51B709D9C0420B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E5991C3B153504FC725C76EBEAEB89F /* Build configuration list for PBXNativeTarget "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD4569F237A696EB9511E00401AFC5A /* Debug */,
+				0993236FE5ED32A7B578BA63BF33FEFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -645,11 +1041,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E62EE684B08BCB43A2440A099296CE34 /* Build configuration list for PBXNativeTarget "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD" */ = {
+		C6A879FE025A74D62A8577AB2E59ADF0 /* Build configuration list for PBXNativeTarget "AMPopTip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74E59B32692A07E07D51ADE09E648D45 /* Debug */,
-				C864A2412B183E256CE4911FF86FCF13 /* Release */,
+				D99459BBA534F09E72EA12AFE839E908 /* Debug */,
+				6CBF7B19C4AA29830389870BE935DB04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
