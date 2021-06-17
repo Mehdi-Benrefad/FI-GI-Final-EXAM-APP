@@ -391,7 +391,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tap-Xx-r6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179.7101449275362" y="852.71739130434787"/>
+            <point key="canvasLocation" x="1038" y="853"/>
         </scene>
         <!--IMC-->
         <scene sceneID="Yjr-So-wp3">
@@ -1033,6 +1033,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="tQR-31-2Dh" kind="show" id="gm4-AH-gXC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwW-hG-UHa">
                                 <rect key="frame" x="55" y="385" width="305" height="56"/>
@@ -1174,6 +1177,51 @@
             </objects>
             <point key="canvasLocation" x="1038" y="-2100"/>
         </scene>
+        <!--Object Name View Controller-->
+        <scene sceneID="2tJ-bK-mms">
+            <objects>
+                <viewController id="tQR-31-2Dh" customClass="ObjectNameViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Blx-nS-yC2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Oy-Iu-R88">
+                                <rect key="frame" x="20" y="80" width="374" height="415"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpU-Mk-kde">
+                                <rect key="frame" x="20" y="568" width="374" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DLC-eB-oeV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ma9-r4-AHs">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark" catalog="system" id="bvT-oq-khX">
+                            <connections>
+                                <segue destination="G1c-6F-EAH" kind="unwind" unwindAction="unwindBookToWelcomeWithSegue:" id="Mn6-A7-FLb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="guH-dE-ynM">
+                            <connections>
+                                <action selector="cameraBTN:" destination="tQR-31-2Dh" id="kwA-fN-9Wd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageSelect" destination="7Oy-Iu-R88" id="Icv-hv-9hD"/>
+                        <outlet property="prediction" destination="PpU-Mk-kde" id="HKe-eI-bfI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghc-0u-A7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="G1c-6F-EAH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1914" y="-2100"/>
+        </scene>
     </scenes>
     <resources>
         <image name="evide" width="231" height="218"/>
@@ -1184,6 +1232,6 @@
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XeE-tH-jVm"/>
+        <segue reference="OW1-Yy-iZE"/>
     </inferredMetricsTieBreakers>
 </document>
