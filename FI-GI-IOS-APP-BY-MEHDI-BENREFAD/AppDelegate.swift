@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,6 +33,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    // MARK: - Core Data stack
+
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "FI-GI-APP")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+
+    //variable statique qui nous permet d'acceder facilement au PersistantContainer
+    static var persistentContainer:NSPersistentContainer{
+        return(UIApplication.shared.delegate as! AppDelegate).persistentContainer
+    }
+    
+    //variable statiique qui nous permet d'accedes au contexte
+    static var viewContext:NSManagedObjectContext{
+        return persistentContainer.viewContext
+    }
+
+    
+    //fonction qui nous permet de sauvegarder ce qu'on a ajoute au contexte dans la base de donnees
+    func saveContext () {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
 
 }
-
