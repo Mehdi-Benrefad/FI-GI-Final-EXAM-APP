@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
 
-    var list = ["Home","Guessing Game","Timer","IMC Calculator","Text Editor","Object Recognition","Contacts App","Map Location"]
+    var list = ["Home","Guessing Game","Timer","IMC Calculator","Text Editor","Object Recognition","Contacts App","Logo Viewer","Map Location"]
     
     @IBOutlet weak var tableViewSideMenu: UITableView!
     
@@ -90,7 +90,12 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
                     let newViewController = storyBoard.instantiateViewController(withIdentifier: "Contacts") as! UINavigationController
                     newViewController.modalPresentationStyle = .fullScreen
                     self.present(newViewController, animated: true, completion: nil)
-            
+            //logoViewer
+            case "Logo Viewer":
+                               let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                               let newViewController = storyBoard.instantiateViewController(withIdentifier: "logoViewer") as! UINavigationController
+                               newViewController.modalPresentationStyle = .fullScreen
+                               self.present(newViewController, animated: true, completion: nil)
            default:
                print("other")
            }
