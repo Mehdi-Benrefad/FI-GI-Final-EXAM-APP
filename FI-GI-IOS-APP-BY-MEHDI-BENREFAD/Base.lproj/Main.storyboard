@@ -17,11 +17,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-Zd-xzg">
-                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="660"/>
                                 <color key="backgroundColor" red="0.87056751943005184" green="0.87056751943005184" blue="0.87056751943005184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SideMenuCell" id="g3q-6m-Prj" customClass="SideMenuCell" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target">
@@ -133,7 +133,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="K8C-HJ-H5M"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KWV-eC-4D7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1510,17 +1510,17 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQJ-Ue-dsk">
-                                <rect key="frame" x="71" y="570" width="273" height="72"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r51-s5-r2D">
+                                <rect key="frame" x="107" y="558" width="200" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="37"/>
                                 <state key="normal" title="Ajouter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="ajouter:" destination="eKs-Vk-VEX" eventType="touchUpInside" id="p1L-zG-IEk"/>
-                                    <segue destination="jMl-ey-lTm" kind="show" id="x5c-HE-MAx"/>
+                                    <action selector="ajouter:" destination="eKs-Vk-VEX" eventType="touchUpInside" id="EkE-W4-xGE"/>
+                                    <segue destination="jMl-ey-lTm" kind="show" id="JOk-st-Fje"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1533,7 +1533,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ajouter Contact" id="XX3-bf-Jox"/>
                     <connections>
-                        <outlet property="boutonAjouter" destination="PQJ-Ue-dsk" id="Pjr-BR-17H"/>
+                        <outlet property="boutonAjouter" destination="r51-s5-r2D" id="HTD-xo-kvx"/>
                         <outlet property="nom" destination="h5q-o9-VQz" id="VUb-45-7BB"/>
                         <outlet property="prenom" destination="whc-UD-bKG" id="5wN-dr-yZm"/>
                         <outlet property="tel" destination="ZjQ-bh-CNm" id="0TT-J0-5K3"/>
@@ -1546,7 +1546,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1112" y="1620"/>
+            <point key="canvasLocation" x="1111.5942028985507" y="1619.8369565217392"/>
         </scene>
         <!--Logo Viewer View Controller-->
         <scene sceneID="TAU-RF-hey">
@@ -1689,7 +1689,7 @@
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="x5c-HE-MAx"/>
-        <segue reference="7uP-7n-Nz5"/>
+        <segue reference="JOk-st-Fje"/>
+        <segue reference="JFP-LV-b2z"/>
     </inferredMetricsTieBreakers>
 </document>

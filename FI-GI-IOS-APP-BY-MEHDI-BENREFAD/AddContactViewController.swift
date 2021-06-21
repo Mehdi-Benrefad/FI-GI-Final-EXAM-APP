@@ -13,13 +13,15 @@ class AddContactViewController: UIViewController {
     @IBOutlet weak var nom: UITextField!
     @IBOutlet weak var prenom: UITextField!
     @IBOutlet weak var tel: UITextField!
-    
     @IBOutlet weak var boutonAjouter: UIButton!
+    
+    //@IBOutlet weak var boutonAjouter: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         boutonAjouter.layer.cornerRadius=25.0    }
+    
     
     @IBAction func ajouter(_ sender: Any) {
         //On fait appel au contexte
@@ -32,7 +34,7 @@ class AddContactViewController: UIViewController {
         try? AppDelegate.viewContext.save()
        
         //revenir en arriere
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
         
         
     }
