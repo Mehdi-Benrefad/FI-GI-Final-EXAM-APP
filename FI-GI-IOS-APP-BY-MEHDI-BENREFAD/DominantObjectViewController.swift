@@ -9,12 +9,14 @@
 import UIKit
 import Vision
 import CoreML
+import AVFoundation
 
 class DominantObjectViewController: UIViewController , UIImagePickerControllerDelegate , UINavigationControllerDelegate{
 
     @IBOutlet weak var imageSelected: UIImageView!
     @IBOutlet weak var prediction: UILabel!
     let imagePicker = UIImagePickerController()
+    var resultToVoice = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +38,18 @@ class DominantObjectViewController: UIViewController , UIImagePickerControllerDe
             Detect(image: ciimage)
         }
          imagePicker.dismiss(animated: true, completion: nil)
+        
     }
     
     
+    @IBAction func speak(_ sender: Any) {
+        let utterance = AVSpeechUtterance(string: resultToVoice)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.rate = 0.1
+
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
     
     
     func Detect(image: CIImage){
@@ -56,7 +67,7 @@ class DominantObjectViewController: UIViewController , UIImagePickerControllerDe
                 //recuperer le premier resultat
                    if let fisrtresult = results.first {
                     self.prediction.text = fisrtresult.identifier
-                       
+                    self.resultToVoice = fisrtresult.identifier
                    }
                }
                

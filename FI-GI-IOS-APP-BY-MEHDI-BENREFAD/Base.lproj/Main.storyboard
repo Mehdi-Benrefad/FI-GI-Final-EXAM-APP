@@ -17,11 +17,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-Zd-xzg">
-                                <rect key="frame" x="0.0" y="56" width="414" height="660"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <color key="backgroundColor" red="0.87056751943005184" green="0.87056751943005184" blue="0.87056751943005184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SideMenuCell" id="g3q-6m-Prj" customClass="SideMenuCell" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target">
@@ -133,7 +133,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="K8C-HJ-H5M"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KWV-eC-4D7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1192,11 +1192,18 @@
                                 <segue destination="K5h-0U-z0M" kind="unwind" unwindAction="unwindBookToWelcomeWithSegue:" id="SYV-pj-DVu"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Oqk-Ak-S2V">
-                            <connections>
-                                <action selector="cameraBTN:" destination="iyz-Oa-M1e" id="LFQ-oA-Cyd"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="Oqk-Ak-S2V">
+                                <connections>
+                                    <action selector="cameraBTN:" destination="iyz-Oa-M1e" id="LFQ-oA-Cyd"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="speaker.3" catalog="system" id="MvR-6L-PR0">
+                                <connections>
+                                    <action selector="speak:" destination="iyz-Oa-M1e" id="joa-ZS-fQM"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="imageSelect" destination="6nL-PD-nuy" id="kNM-aB-cj0"/>
@@ -1237,11 +1244,18 @@
                                 <segue destination="G1c-6F-EAH" kind="unwind" unwindAction="unwindBookToWelcomeWithSegue:" id="Mn6-A7-FLb"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="guH-dE-ynM">
-                            <connections>
-                                <action selector="cameraBTN:" destination="tQR-31-2Dh" id="kwA-fN-9Wd"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="guH-dE-ynM">
+                                <connections>
+                                    <action selector="cameraBTN:" destination="tQR-31-2Dh" id="kwA-fN-9Wd"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="speaker.3" catalog="system" id="BjL-Rb-qKw">
+                                <connections>
+                                    <action selector="speak:" destination="tQR-31-2Dh" id="3mf-GN-KfP"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="imageSelect" destination="7Oy-Iu-R88" id="Icv-hv-9hD"/>
@@ -1282,11 +1296,18 @@
                                 <segue destination="HLD-3v-m4O" kind="unwind" unwindAction="unwindBookToWelcomeWithSegue:" id="Al2-dQ-jEh"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="ZN3-yq-Bpp">
-                            <connections>
-                                <action selector="cameraBTN:" destination="cgh-m0-F48" id="84Z-Nx-7nr"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="ZN3-yq-Bpp">
+                                <connections>
+                                    <action selector="cameraBTN:" destination="cgh-m0-F48" id="84Z-Nx-7nr"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="speaker.3" catalog="system" id="IzZ-QG-RQz">
+                                <connections>
+                                    <action selector="speak:" destination="cgh-m0-F48" id="1cs-22-Ewk"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="imageSelected" destination="3Fu-kH-Uho" id="fd9-Or-Pmy"/>
@@ -1327,11 +1348,18 @@
                                 <segue destination="m0O-6c-XVe" kind="unwind" unwindAction="unwindBookToWelcomeWithSegue:" id="N3s-c1-3yq"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="NcC-gZ-IAV">
-                            <connections>
-                                <action selector="cameraBTN:" destination="E4w-RL-BmG" id="EIv-CW-JLl"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="NcC-gZ-IAV">
+                                <connections>
+                                    <action selector="cameraBTN:" destination="E4w-RL-BmG" id="EIv-CW-JLl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="speaker.3" catalog="system" id="Lk2-sp-oXD">
+                                <connections>
+                                    <action selector="speak:" destination="E4w-RL-BmG" id="71M-K8-Cgn"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="imageSelected" destination="okO-Gf-1Ql" id="PlU-lb-j8K"/>
@@ -1352,7 +1380,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sKo-7E-NZf">
-                                <rect key="frame" x="0.0" y="89" width="414" height="647"/>
+                                <rect key="frame" x="0.0" y="133" width="414" height="603"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" textLabel="pOZ-7g-tTP" detailTextLabel="KVO-F9-XmD" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="gc3-d3-mRw">
@@ -1686,10 +1714,11 @@
         <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="pause" catalog="system" width="44" height="64"/>
         <image name="play.fill" catalog="system" width="58" height="64"/>
+        <image name="speaker.3" catalog="system" width="64" height="44"/>
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JOk-st-Fje"/>
+        <segue reference="N7a-XM-AaH"/>
         <segue reference="JFP-LV-b2z"/>
     </inferredMetricsTieBreakers>
 </document>

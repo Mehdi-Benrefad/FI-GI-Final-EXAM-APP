@@ -9,13 +9,15 @@
 import UIKit
 import CoreML
 import Vision
+import AVFoundation
 
 class IsADesktopViewController: UIViewController , UIImagePickerControllerDelegate , UINavigationControllerDelegate{
 
     @IBOutlet weak var imageSelect: UIImageView!
     @IBOutlet weak var shoeLabel: UILabel!
     let imagePicker = UIImagePickerController()
-     
+     var resultToVoice = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //definir le viewController en tant que delegate de l'image picker
@@ -36,8 +38,17 @@ class IsADesktopViewController: UIViewController , UIImagePickerControllerDelega
             Detect(image: ciimage)
         }
          imagePicker.dismiss(animated: true, completion: nil)
+        
     }
     
+    @IBAction func speak(_ sender: Any) {
+        let utterance = AVSpeechUtterance(string: resultToVoice)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.rate = 0.1
+
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
     
     func Detect(image: CIImage){
         //recuperer le modele
@@ -57,9 +68,11 @@ class IsADesktopViewController: UIViewController , UIImagePickerControllerDelega
                        if fisrtresult.identifier.contains("desktop computer"){
                             //afficher le resultat dans le label
                            self.shoeLabel.text = "IT'S A DESKTOP COMPUTER"
+                        self.resultToVoice = "IT'S A DESKTOP COMPUTER"
                        }else{
                             //afficher le resultat dans le label
                             self.shoeLabel.text = "IT'S NOT A COMPUTER"
+                        self.resultToVoice = "IT'S NOT A COMPUTER"
                        }
                    }
                }

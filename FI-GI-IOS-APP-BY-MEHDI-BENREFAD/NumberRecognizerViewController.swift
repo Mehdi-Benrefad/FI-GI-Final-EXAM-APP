@@ -9,10 +9,12 @@
 import UIKit
 import Vision
 import CoreML
+import AVFoundation
 
 class NumberRecognizerViewController: UIViewController , UIImagePickerControllerDelegate , UINavigationControllerDelegate{
     let imagePicker = UIImagePickerController()
-       
+       var resultToVoice = ""
+    
        @IBOutlet weak var prediction: UILabel!
        @IBOutlet weak var imageSelected: UIImageView!
        override func viewDidLoad() {
@@ -38,10 +40,19 @@ class NumberRecognizerViewController: UIViewController , UIImagePickerController
                Detect(image: ciimage)
            }
             imagePicker.dismiss(animated: true, completion: nil)
+        
        }
        
        
-       
+    @IBAction func speak(_ sender: Any) {
+        let utterance = AVSpeechUtterance(string: resultToVoice)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.rate = 0.1
+
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
+    
        //Detecter image
        func Detect(image: CIImage){
            //recuperer le modele
@@ -59,6 +70,7 @@ class NumberRecognizerViewController: UIViewController , UIImagePickerController
                    //recuperer le premier resultat
                       if let fisrtresult = results.first {
                        self.prediction.text = "the number is:" + fisrtresult.identifier
+                        self.resultToVoice = "the number is:" + fisrtresult.identifier
                           
                       }
                   }
