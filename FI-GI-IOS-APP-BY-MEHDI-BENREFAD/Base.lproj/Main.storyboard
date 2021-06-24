@@ -1751,7 +1751,7 @@
         <!--Login View Controller-->
         <scene sceneID="lBk-sB-Oge">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="RSk-DR-22Z" customClass="LoginViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="RSk-DR-22Z" customClass="LoginViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tbx-cG-3oU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1835,13 +1835,13 @@
         <!--List-->
         <scene sceneID="xBe-xN-AMc">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="xmq-MW-Em1" customClass="ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="xmq-MW-Em1" customClass="ViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X0D-jz-VEN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3le-uA-1Qx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="660"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" textLabel="Deo-D8-cXV" detailTextLabel="gTg-K8-cuF" style="IBUITableViewCellStyleSubtitle" id="x0O-fy-1Ja">
@@ -1898,6 +1898,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="3le-uA-1Qx" id="NGA-7H-vcJ"/>
+                        <segue destination="zhF-E1-YmE" kind="show" identifier="SegueToEdit" id="FDm-np-Ngy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTC-fj-WvL" sceneMemberID="firstResponder"/>
@@ -1911,7 +1912,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="lqW-9h-eqD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wiy-Pd-tZu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1922,6 +1923,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLS-P3-t2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2992.753623188406" y="2351.9021739130435"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="c5a-YW-Pt2">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="zhF-E1-YmE" customClass="EditViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5F1-Mz-ICk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ck-Wv-zcV">
+                                <rect key="frame" x="52" y="179" width="299" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rae-c8-vDg">
+                                <rect key="frame" x="52" y="349" width="299" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jC6-bf-ehZ">
+                                <rect key="frame" x="131" y="551" width="153" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.11763454230000001" green="0.1176540628" blue="0.1176278964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="UPDATE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="UpdatePerson:" destination="zhF-E1-YmE" eventType="touchUpInside" id="JY9-cr-tdX"/>
+                                    <segue destination="brg-rI-MRt" kind="show" id="vbj-Gd-xrp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-pI-M2Y">
+                                <rect key="frame" x="90" y="46" width="234" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0D-7p-rfb">
+                                <rect key="frame" x="52" y="267" width="299" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jhp-ag-IYr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K50-2J-Y32"/>
+                    <connections>
+                        <outlet property="age" destination="Rae-c8-vDg" id="EGp-mn-Ls1"/>
+                        <outlet property="fname" destination="2Ck-Wv-zcV" id="W5O-rh-nYS"/>
+                        <outlet property="lname" destination="a0D-7p-rfb" id="Cbr-dl-jy0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2W-7P-eUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3901" y="3084"/>
         </scene>
     </scenes>
     <resources>
@@ -1935,6 +1997,7 @@
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="vbj-Gd-xrp"/>
         <segue reference="N7a-XM-AaH"/>
         <segue reference="XUy-iP-8gP"/>
     </inferredMetricsTieBreakers>
