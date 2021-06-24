@@ -18,13 +18,13 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     //var list = [lst(logo: UIImage(named: "Home")!, label: "Home"),"Guessing Game","Timer","IMC Calculator","Text Editor","Object Recognition","Contacts App","Logo Viewer","Map Location"]
     
     var list = [lst(logo: UIImage(named: "Home")!, label: "Home"),
-    lst(logo: UIImage(named: "devinette")!, label: "Guessing Game"),
-    lst(logo: UIImage(named: "epleine")!, label: "Timer"),
+    lst(logo: UIImage(named: "dev2")!, label: "Guessing Game"),
+    lst(logo: UIImage(named: "ep")!, label: "Timer"),
     lst(logo: UIImage(named: "health")!, label: "IMC Calculator"),
-    lst(logo: UIImage(named: "Home")!, label: "Text Editor"),
+    lst(logo: UIImage(named: "texteditor")!, label: "Text Editor"),
     lst(logo: UIImage(named: "AI")!, label: "Object Recognition"),
     lst(logo: UIImage(named: "Profile")!, label: "Contacts App"),
-    lst(logo: UIImage(named: "Home")!, label: "Logo Viewer"),
+    lst(logo: UIImage(named: "lv")!, label: "Logo Viewer"),
     lst(logo: UIImage(named: "map")!, label: "Map Location")]
     
     @IBOutlet weak var tableViewSideMenu: UITableView!
