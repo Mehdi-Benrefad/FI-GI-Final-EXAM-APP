@@ -44,6 +44,7 @@
 		4F6D941F267B94B40031D8E7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D941E267B94B40031D8E7 /* MapViewController.swift */; };
 		4F6D9423267BB5BE0031D8E7 /* TextEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D9422267BB5BE0031D8E7 /* TextEditorViewController.swift */; };
 		4F6D9425267BB5FA0031D8E7 /* TextEditorResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D9424267BB5FA0031D8E7 /* TextEditorResultViewController.swift */; };
+		4F7BFE7D2684FDE10035877A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F7BFE7C2684FDE10035877A /* GoogleService-Info.plist */; };
 		4F83D338267B9118000C4523 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F83D337267B9118000C4523 /* CoreLocation.framework */; };
 		4FBF78EB267ECACE00EF5F5B /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF78EA267ECACE00EF5F5B /* AddContactViewController.swift */; };
 		4FF2D930267BE52C005A153B /* NumberRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2D92F267BE52B005A153B /* NumberRecognizerViewController.swift */; };
@@ -90,6 +91,7 @@
 		4F6D941E267B94B40031D8E7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4F6D9422267BB5BE0031D8E7 /* TextEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorViewController.swift; sourceTree = "<group>"; };
 		4F6D9424267BB5FA0031D8E7 /* TextEditorResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorResultViewController.swift; sourceTree = "<group>"; };
+		4F7BFE7C2684FDE10035877A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../apps gi/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F83D337267B9118000C4523 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4FBF78EA267ECACE00EF5F5B /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		4FF2D92F267BE52B005A153B /* NumberRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRecognizerViewController.swift; sourceTree = "<group>"; };
@@ -152,9 +154,8 @@
 		4F5A7B4E26849C4200D0D38E /* Chat App */ = {
 			isa = PBXGroup;
 			children = (
-				4F5A7B4F26849C7D00D0D38E /* LoginViewController.swift */,
+				4F7BFE7B2684F5EC0035877A /* Login Register */,
 				4F5A7B5126849CBB00D0D38E /* ConversationsViewController.swift */,
-				4F5A7B5326849CE000D0D38E /* RegisterViewController.swift */,
 				4F5A7B5526849D0200D0D38E /* PhotoViewerViewController.swift */,
 				4F5A7B5726849D2900D0D38E /* VideoPlayerViewController.swift */,
 				4F5A7B5926849D4C00D0D38E /* NewConversationViewController.swift */,
@@ -219,6 +220,7 @@
 			children = (
 				4F6873D9267A7547002D59A1 /* AppDelegate.swift */,
 				4F6873DB267A7547002D59A1 /* SceneDelegate.swift */,
+				4F7BFE7C2684FDE10035877A /* GoogleService-Info.plist */,
 				4F23AFC2267EC75800EFC87D /* FI-GI-APP.xcdatamodeld */,
 				4F6873F5267A8BB7002D59A1 /* Controller */,
 				4F6873F3267A8B8B002D59A1 /* Model */,
@@ -321,6 +323,15 @@
 			name = "ML Models";
 			sourceTree = "<group>";
 		};
+		4F7BFE7B2684F5EC0035877A /* Login Register */ = {
+			isa = PBXGroup;
+			children = (
+				4F5A7B4F26849C7D00D0D38E /* LoginViewController.swift */,
+				4F5A7B5326849CE000D0D38E /* RegisterViewController.swift */,
+			);
+			name = "Login Register";
+			sourceTree = "<group>";
+		};
 		DBA48806F60D95F354289A68 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F6873E6267A7551002D59A1 /* LaunchScreen.storyboard in Resources */,
+				4F7BFE7D2684FDE10035877A /* GoogleService-Info.plist in Resources */,
 				4F6873E3267A7551002D59A1 /* Assets.xcassets in Resources */,
 				4F6873E1267A7547002D59A1 /* Main.storyboard in Resources */,
 			);

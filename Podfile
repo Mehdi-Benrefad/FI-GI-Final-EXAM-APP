@@ -7,6 +7,11 @@ target 'FI-GI-IOS-APP-BY-MEHDI-BENREFAD' do
 pod 'SideMenu'
 pod 'TransitionButton'
 pod 'AMPopTip'
+pod 'MessageKit'
+pod 'Firebase/Analytics'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'Firebase/Core'
   # Pods for FI-GI-IOS-APP-BY-MEHDI-BENREFAD
 
 end

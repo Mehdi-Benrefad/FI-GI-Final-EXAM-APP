@@ -25,7 +25,8 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     lst(logo: UIImage(named: "AI")!, label: "Object Recognition"),
     lst(logo: UIImage(named: "Profile")!, label: "Contacts App"),
     lst(logo: UIImage(named: "lv")!, label: "Logo Viewer"),
-    lst(logo: UIImage(named: "map")!, label: "Map Location")]
+    lst(logo: UIImage(named: "map")!, label: "Map Location"),
+    lst(logo: UIImage(named: "map")!, label: "Chat App")]
     
     @IBOutlet weak var tableViewSideMenu: UITableView!
     
@@ -111,9 +112,16 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
                                let newViewController = storyBoard.instantiateViewController(withIdentifier: "logoViewer") as! UINavigationController
                                newViewController.modalPresentationStyle = .fullScreen
                                self.present(newViewController, animated: true, completion: nil)
+            //Chat App
+            case "Chat App":
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "Chat App") as! UINavigationController
+            newViewController.modalPresentationStyle = .fullScreen
+            self.present(newViewController, animated: true, completion: nil)
            default:
                print("other")
            }
+        
     }
     
 }
