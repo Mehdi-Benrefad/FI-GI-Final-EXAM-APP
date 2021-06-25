@@ -47,6 +47,11 @@
 		4F7BFE7D2684FDE10035877A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F7BFE7C2684FDE10035877A /* GoogleService-Info.plist */; };
 		4F83D338267B9118000C4523 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F83D337267B9118000C4523 /* CoreLocation.framework */; };
 		4FBF78EB267ECACE00EF5F5B /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF78EA267ECACE00EF5F5B /* AddContactViewController.swift */; };
+		4FD2C4A9268520B700DF2B3F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD2C4A8268520B700DF2B3F /* Person.swift */; };
+		4FD2C4AC268521AF00DF2B3F /* FirebaseAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD2C4AB268521AF00DF2B3F /* FirebaseAppViewController.swift */; };
+		4FD2C4AF268552BC00DF2B3F /* LoginFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD2C4AE268552BC00DF2B3F /* LoginFirebaseViewController.swift */; };
+		4FD2C4B12685535A00DF2B3F /* AddFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD2C4B02685535A00DF2B3F /* AddFirebaseViewController.swift */; };
+		4FD2C4B3268553FE00DF2B3F /* EditFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD2C4B2268553FE00DF2B3F /* EditFirebaseViewController.swift */; };
 		4FF2D930267BE52C005A153B /* NumberRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2D92F267BE52B005A153B /* NumberRecognizerViewController.swift */; };
 		E3BDDFEAD4461DBB0EF52889 /* Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2E82611E2A089485960F58 /* Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +99,11 @@
 		4F7BFE7C2684FDE10035877A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../apps gi/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F83D337267B9118000C4523 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4FBF78EA267ECACE00EF5F5B /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		4FD2C4A8268520B700DF2B3F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4FD2C4AB268521AF00DF2B3F /* FirebaseAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAppViewController.swift; sourceTree = "<group>"; };
+		4FD2C4AE268552BC00DF2B3F /* LoginFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseViewController.swift; sourceTree = "<group>"; };
+		4FD2C4B02685535A00DF2B3F /* AddFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFirebaseViewController.swift; sourceTree = "<group>"; };
+		4FD2C4B2268553FE00DF2B3F /* EditFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFirebaseViewController.swift; sourceTree = "<group>"; };
 		4FF2D92F267BE52B005A153B /* NumberRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRecognizerViewController.swift; sourceTree = "<group>"; };
 		6880FF8A068C2C825A85F794 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig"; path = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig"; sourceTree = "<group>"; };
 		C5487F196CDD6D6F85A7290B /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig"; path = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig"; sourceTree = "<group>"; };
@@ -239,6 +249,7 @@
 				4F6D942F267BC04D0031D8E7 /* ML Models */,
 				4F6709C1267B7C6700F49480 /* IMC */,
 				4F6935B9267AE4F200F10BFE /* gessingGame */,
+				4FD2C4AA268520D400DF2B3F /* firebase App */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -267,6 +278,7 @@
 				4F6873EF267A7C3C002D59A1 /* HomeViewController.swift */,
 				4F6873ED267A78AB002D59A1 /* SideMenuCell.swift */,
 				4F6873DD267A7547002D59A1 /* ViewController.swift */,
+				4FD2C4AD268526E300DF2B3F /* Firebase App */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -330,6 +342,25 @@
 				4F5A7B5326849CE000D0D38E /* RegisterViewController.swift */,
 			);
 			name = "Login Register";
+			sourceTree = "<group>";
+		};
+		4FD2C4AA268520D400DF2B3F /* firebase App */ = {
+			isa = PBXGroup;
+			children = (
+				4FD2C4A8268520B700DF2B3F /* Person.swift */,
+			);
+			name = "firebase App";
+			sourceTree = "<group>";
+		};
+		4FD2C4AD268526E300DF2B3F /* Firebase App */ = {
+			isa = PBXGroup;
+			children = (
+				4FD2C4AB268521AF00DF2B3F /* FirebaseAppViewController.swift */,
+				4FD2C4AE268552BC00DF2B3F /* LoginFirebaseViewController.swift */,
+				4FD2C4B02685535A00DF2B3F /* AddFirebaseViewController.swift */,
+				4FD2C4B2268553FE00DF2B3F /* EditFirebaseViewController.swift */,
+			);
+			name = "Firebase App";
 			sourceTree = "<group>";
 		};
 		DBA48806F60D95F354289A68 /* Pods */ = {
@@ -462,10 +493,12 @@
 				4F6709C0267B7C1800F49480 /* IMCViewController.swift in Sources */,
 				4F6D9425267BB5FA0031D8E7 /* TextEditorResultViewController.swift in Sources */,
 				4F059E8D267BC200009F5825 /* MNISTClassifier.mlmodel in Sources */,
+				4FD2C4AC268521AF00DF2B3F /* FirebaseAppViewController.swift in Sources */,
 				4F6873F0267A7C3C002D59A1 /* HomeViewController.swift in Sources */,
 				4F5A7B5C26849D8700D0D38E /* ProfileViewController.swift in Sources */,
 				4F059E89267BC1DC009F5825 /* MobileNetV2.mlmodel in Sources */,
 				4FF2D930267BE52C005A153B /* NumberRecognizerViewController.swift in Sources */,
+				4FD2C4A9268520B700DF2B3F /* Person.swift in Sources */,
 				4F6D9423267BB5BE0031D8E7 /* TextEditorViewController.swift in Sources */,
 				4F6873F7267A8DA4002D59A1 /* GessingGameViewController.swift in Sources */,
 				4F23AFC4267EC75800EFC87D /* FI-GI-APP.xcdatamodeld in Sources */,
@@ -474,11 +507,14 @@
 				4F6709C3267B7C8500F49480 /* IMC.swift in Sources */,
 				4F5A7B5226849CBB00D0D38E /* ConversationsViewController.swift in Sources */,
 				4F6873DE267A7547002D59A1 /* ViewController.swift in Sources */,
+				4FD2C4B12685535A00DF2B3F /* AddFirebaseViewController.swift in Sources */,
 				4F6709C5267B7CDF00F49480 /* IMCResultViewController.swift in Sources */,
+				4FD2C4B3268553FE00DF2B3F /* EditFirebaseViewController.swift in Sources */,
 				4F059E8F267BC208009F5825 /* Resnet50.mlmodel in Sources */,
 				4F6873F9267A9021002D59A1 /* backgroundService.swift in Sources */,
 				4F6D941F267B94B40031D8E7 /* MapViewController.swift in Sources */,
 				4F5A7B5026849C7D00D0D38E /* LoginViewController.swift in Sources */,
+				4FD2C4AF268552BC00DF2B3F /* LoginFirebaseViewController.swift in Sources */,
 				4F66C4332680A8E500C7CA70 /* LogoService.swift in Sources */,
 				4F6D1E43267B69FB00E5ED50 /* TimerViewController.swift in Sources */,
 				4F5A7B5A26849D4C00D0D38E /* NewConversationViewController.swift in Sources */,

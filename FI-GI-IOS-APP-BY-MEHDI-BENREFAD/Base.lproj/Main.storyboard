@@ -564,7 +564,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMu-pA-3Oh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039" y="-642"/>
+            <point key="canvasLocation" x="1006" y="-642"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="cyS-p2-z2X">
@@ -1748,10 +1748,10 @@
             </objects>
             <point key="canvasLocation" x="-572.46376811594212" y="2351.9021739130435"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login Firebase View Controller-->
         <scene sceneID="lBk-sB-Oge">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="RSk-DR-22Z" customClass="LoginViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="RSk-DR-22Z" customClass="LoginFirebaseViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tbx-cG-3oU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1803,7 +1803,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="uPv-o8-f6P"/>
                     </view>
-                    <navigationItem key="navigationItem" id="e2u-ZY-YR0"/>
+                    <navigationItem key="navigationItem" id="e2u-ZY-YR0">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="ju9-dr-EOI">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="BT4-uB-QnY" kind="show" identifier="firebaseToSideMenu" id="dx9-JN-HUy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="login" destination="xiv-L6-Ga1" id="ogL-rc-LQJ"/>
                         <outlet property="password" destination="zI2-eH-grL" id="6qD-d5-Kxo"/>
@@ -1817,7 +1824,7 @@
         <!--Navigation Controller-->
         <scene sceneID="lqp-M0-pBf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2eW-op-GDi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Firebase App" automaticallyAdjustsScrollViewInsets="NO" id="2eW-op-GDi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="neh-8O-AGG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -1835,13 +1842,13 @@
         <!--List-->
         <scene sceneID="xBe-xN-AMc">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="xmq-MW-Em1" customClass="ViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="xmq-MW-Em1" customClass="FirebaseAppViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X0D-jz-VEN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3le-uA-1Qx">
-                                <rect key="frame" x="0.0" y="56" width="414" height="660"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" textLabel="Deo-D8-cXV" detailTextLabel="gTg-K8-cuF" style="IBUITableViewCellStyleSubtitle" id="x0O-fy-1Ja">
@@ -1894,7 +1901,11 @@
                                 <action selector="LogOut:" destination="xmq-MW-Em1" id="aor-ve-MTG"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="adY-gC-czo"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="adY-gC-czo">
+                            <connections>
+                                <segue destination="EQa-Eo-eQK" kind="show" id="bzu-0F-Bnh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="3le-uA-1Qx" id="NGA-7H-vcJ"/>
@@ -1908,11 +1919,11 @@
         <!--Navigation Controller-->
         <scene sceneID="7DP-g8-QAk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="brg-rI-MRt" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="brg-rI-MRt" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="lqW-9h-eqD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wiy-Pd-tZu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1924,12 +1935,12 @@
             </objects>
             <point key="canvasLocation" x="2992.753623188406" y="2351.9021739130435"/>
         </scene>
-        <!--Edit View Controller-->
+        <!--Edit Firebase View Controller-->
         <scene sceneID="c5a-YW-Pt2">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="zhF-E1-YmE" customClass="EditViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="zhF-E1-YmE" customClass="EditFirebaseViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5F1-Mz-ICk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ck-Wv-zcV">
@@ -1985,6 +1996,82 @@
             </objects>
             <point key="canvasLocation" x="3901" y="3084"/>
         </scene>
+        <!--Add Person-->
+        <scene sceneID="kuW-NR-WqJ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="EQa-Eo-eQK" customClass="AddFirebaseViewController" customModule="FI_GI_IOS_APP_BY_MEHDI_BENREFAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MVl-ea-hc9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7r6-KJ-E7y">
+                                <rect key="frame" x="50" y="349" width="299" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyr-Xi-qbV">
+                                <rect key="frame" x="131" y="552" width="153" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.11763454230000001" green="0.1176540628" blue="0.1176278964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="ADD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPerson:" destination="EQa-Eo-eQK" eventType="touchUpInside" id="ge6-A7-8oU"/>
+                                    <segue destination="xmq-MW-Em1" kind="show" id="B6U-yc-aT2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbI-ed-9zg">
+                                <rect key="frame" x="91" y="43" width="234" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dx2-4V-ne5">
+                                <rect key="frame" x="50" y="197" width="299" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftZ-9N-tyw">
+                                <rect key="frame" x="50" y="271" width="299" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg5-Pq-RXh">
+                                <rect key="frame" x="50" y="431" width="94" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Image">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="inageBTN:" destination="EQa-Eo-eQK" eventType="touchUpInside" id="Mdr-wE-0Ro"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-rj-SkM">
+                                <rect key="frame" x="168" y="411" width="80" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="de8-5K-2me"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Person" id="6Db-Eu-plI"/>
+                    <connections>
+                        <outlet property="age" destination="7r6-KJ-E7y" id="JKi-Jo-cko"/>
+                        <outlet property="fname" destination="dx2-4V-ne5" id="oFm-fS-LDG"/>
+                        <outlet property="imgg" destination="lfx-rj-SkM" id="Vg2-wW-8De"/>
+                        <outlet property="lname" destination="ftZ-9N-tyw" id="VbN-Qh-JZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIM-hc-xnR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4745" y="2352"/>
+        </scene>
     </scenes>
     <resources>
         <image name="evide" width="231" height="218"/>
@@ -1997,8 +2084,9 @@
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vbj-Gd-xrp"/>
+        <segue reference="Q9L-dE-JTe"/>
+        <segue reference="JUy-kP-v3Q"/>
         <segue reference="N7a-XM-AaH"/>
-        <segue reference="XUy-iP-8gP"/>
+        <segue reference="dx9-JN-HUy"/>
     </inferredMetricsTieBreakers>
 </document>
