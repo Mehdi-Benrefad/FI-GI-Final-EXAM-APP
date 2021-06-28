@@ -26,8 +26,8 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     lst(logo: UIImage(named: "Profile")!, label: "Contacts App"),
     lst(logo: UIImage(named: "lv")!, label: "Logo Viewer"),
     lst(logo: UIImage(named: "map")!, label: "Map Location"),
-    lst(logo: UIImage(named: "map")!, label: "Chat App"),
-    lst(logo: UIImage(named: "map")!, label: "Firebase App")]
+    lst(logo: UIImage(named: "phone")!, label: "Chat App"),
+    lst(logo: UIImage(named: "Firebase")!, label: "Firebase App")]
     
     @IBOutlet weak var tableViewSideMenu: UITableView!
     
