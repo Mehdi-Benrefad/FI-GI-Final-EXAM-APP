@@ -44,12 +44,19 @@ class ContactsViewController: UIViewController ,UITableViewDataSource , UITableV
         //on charge chaque "Movie" dans sa cellule correspondante
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell") as! CustomTableViewCell
+        let contact = contacts[indexPath.row]
+        cell.remplire(nom: contact.nom! + " " + contact.prenom! , tel: contact.tel ?? "", image: contact.photo ?? Data())
+        return cell
+        
+        /*
          let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath)
          let contact = contacts[indexPath.row]
          let fullname = contact.nom! + " " + contact.prenom!
          cell.textLabel?.text = fullname
          cell.detailTextLabel?.text = contact.tel
-        return cell
+         //cell.imageView = UIImageView(data: contact.photo!)
+        return cell*/
      }
      
      
