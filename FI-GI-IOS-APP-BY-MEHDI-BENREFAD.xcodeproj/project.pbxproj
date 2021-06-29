@@ -46,6 +46,10 @@
 		4FD2C4AF268552BC00DF2B3F /* LoginFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD2C4AE268552BC00DF2B3F /* LoginFirebaseViewController.swift */; };
 		4FD2C4B12685535A00DF2B3F /* AddFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD2C4B02685535A00DF2B3F /* AddFirebaseViewController.swift */; };
 		4FD2C4B3268553FE00DF2B3F /* EditFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD2C4B2268553FE00DF2B3F /* EditFirebaseViewController.swift */; };
+		4FDDF375268B37E100FEFD57 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF374268B37E100FEFD57 /* ChatViewController.swift */; };
+		4FDDF377268B3FC900FEFD57 /* Chat2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF376268B3FC900FEFD57 /* Chat2ViewController.swift */; };
+		4FDDF379268B4F4F00FEFD57 /* TVCChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF378268B4F4E00FEFD57 /* TVCChat.swift */; };
+		4FDDF37B268B51E100FEFD57 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF37A268B51E100FEFD57 /* Chat.swift */; };
 		4FF2D930267BE52C005A153B /* NumberRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2D92F267BE52B005A153B /* NumberRecognizerViewController.swift */; };
 		E3BDDFEAD4461DBB0EF52889 /* Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2E82611E2A089485960F58 /* Pods_FI_GI_IOS_APP_BY_MEHDI_BENREFAD.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +96,10 @@
 		4FD2C4AE268552BC00DF2B3F /* LoginFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirebaseViewController.swift; sourceTree = "<group>"; };
 		4FD2C4B02685535A00DF2B3F /* AddFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFirebaseViewController.swift; sourceTree = "<group>"; };
 		4FD2C4B2268553FE00DF2B3F /* EditFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFirebaseViewController.swift; sourceTree = "<group>"; };
+		4FDDF374268B37E100FEFD57 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		4FDDF376268B3FC900FEFD57 /* Chat2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Chat2ViewController.swift; path = Assets.xcassets/AI.imageset/Chat2ViewController.swift; sourceTree = "<group>"; };
+		4FDDF378268B4F4E00FEFD57 /* TVCChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCChat.swift; sourceTree = "<group>"; };
+		4FDDF37A268B51E100FEFD57 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		4FF2D92F267BE52B005A153B /* NumberRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRecognizerViewController.swift; sourceTree = "<group>"; };
 		6880FF8A068C2C825A85F794 /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig"; path = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.debug.xcconfig"; sourceTree = "<group>"; };
 		C5487F196CDD6D6F85A7290B /* Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig"; path = "Target Support Files/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD/Pods-FI-GI-IOS-APP-BY-MEHDI-BENREFAD.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +161,10 @@
 		4F5A7B4E26849C4200D0D38E /* Chat App */ = {
 			isa = PBXGroup;
 			children = (
+				4FDDF374268B37E100FEFD57 /* ChatViewController.swift */,
+				4FDDF376268B3FC900FEFD57 /* Chat2ViewController.swift */,
+				4FDDF378268B4F4E00FEFD57 /* TVCChat.swift */,
+				4FDDF37A268B51E100FEFD57 /* Chat.swift */,
 			);
 			name = "Chat App";
 			sourceTree = "<group>";
@@ -471,6 +483,7 @@
 				4F059E89267BC1DC009F5825 /* MobileNetV2.mlmodel in Sources */,
 				4FF2D930267BE52C005A153B /* NumberRecognizerViewController.swift in Sources */,
 				4FD2C4A9268520B700DF2B3F /* Person.swift in Sources */,
+				4FDDF37B268B51E100FEFD57 /* Chat.swift in Sources */,
 				4F6D9423267BB5BE0031D8E7 /* TextEditorViewController.swift in Sources */,
 				4F6873F7267A8DA4002D59A1 /* GessingGameViewController.swift in Sources */,
 				4F23AFC4267EC75800EFC87D /* FI-GI-APP.xcdatamodeld in Sources */,
@@ -479,12 +492,14 @@
 				4F6709C3267B7C8500F49480 /* IMC.swift in Sources */,
 				4F6873DE267A7547002D59A1 /* ViewController.swift in Sources */,
 				4FD2C4B12685535A00DF2B3F /* AddFirebaseViewController.swift in Sources */,
+				4FDDF379268B4F4F00FEFD57 /* TVCChat.swift in Sources */,
 				4F6709C5267B7CDF00F49480 /* IMCResultViewController.swift in Sources */,
 				4FD2C4B3268553FE00DF2B3F /* EditFirebaseViewController.swift in Sources */,
 				4F059E8F267BC208009F5825 /* Resnet50.mlmodel in Sources */,
 				4F6873F9267A9021002D59A1 /* backgroundService.swift in Sources */,
 				4F32113A268A319B00FF0C75 /* CustomTableViewCell.swift in Sources */,
 				4F6D941F267B94B40031D8E7 /* MapViewController.swift in Sources */,
+				4FDDF377268B3FC900FEFD57 /* Chat2ViewController.swift in Sources */,
 				4FD2C4AF268552BC00DF2B3F /* LoginFirebaseViewController.swift in Sources */,
 				4F66C4332680A8E500C7CA70 /* LogoService.swift in Sources */,
 				4F6D1E43267B69FB00E5ED50 /* TimerViewController.swift in Sources */,
@@ -496,6 +511,7 @@
 				4F6873DC267A7547002D59A1 /* SceneDelegate.swift in Sources */,
 				4F6873EE267A78AB002D59A1 /* SideMenuCell.swift in Sources */,
 				4F059E91267BC49A009F5825 /* ObjectRecognitionHomeViewController.swift in Sources */,
+				4FDDF375268B37E100FEFD57 /* ChatViewController.swift in Sources */,
 				4F23AFC7267EC87400EFC87D /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
