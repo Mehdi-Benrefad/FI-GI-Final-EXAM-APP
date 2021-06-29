@@ -18,13 +18,6 @@
 		4F23AFC7267EC87400EFC87D /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F23AFC6267EC87400EFC87D /* ContactsViewController.swift */; };
 		4F23AFC9267EC8F800EFC87D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F23AFC8267EC8F800EFC87D /* Contact.swift */; };
 		4F32113A268A319B00FF0C75 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F321139268A319B00FF0C75 /* CustomTableViewCell.swift */; };
-		4F5A7B5026849C7D00D0D38E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A7B4F26849C7D00D0D38E /* LoginViewController.swift */; };
-		4F5A7B5226849CBB00D0D38E /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A7B5126849CBB00D0D38E /* ConversationsViewController.swift */; };
-		4F5A7B5426849CE000D0D38E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A7B5326849CE000D0D38E /* RegisterViewController.swift */; };
-		4F5A7B5626849D0200D0D38E /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A7B5526849D0200D0D38E /* PhotoViewerViewController.swift */; };
-		4F5A7B5826849D2900D0D38E /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A7B5726849D2900D0D38E /* VideoPlayerViewController.swift */; };
-		4F5A7B5A26849D4C00D0D38E /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A7B5926849D4C00D0D38E /* NewConversationViewController.swift */; };
-		4F5A7B5C26849D8700D0D38E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A7B5B26849D8700D0D38E /* ProfileViewController.swift */; };
 		4F5ABD83267BE11600EBCB41 /* DominantObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5ABD82267BE11600EBCB41 /* DominantObjectViewController.swift */; };
 		4F66C4332680A8E500C7CA70 /* LogoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66C4322680A8E500C7CA70 /* LogoService.swift */; };
 		4F66C4352680AB0200C7CA70 /* LogoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66C4342680AB0200C7CA70 /* LogoViewerViewController.swift */; };
@@ -69,13 +62,6 @@
 		4F23AFC6267EC87400EFC87D /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		4F23AFC8267EC8F800EFC87D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		4F321139268A319B00FF0C75 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		4F5A7B4F26849C7D00D0D38E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4F5A7B5126849CBB00D0D38E /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
-		4F5A7B5326849CE000D0D38E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		4F5A7B5526849D0200D0D38E /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
-		4F5A7B5726849D2900D0D38E /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
-		4F5A7B5926849D4C00D0D38E /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
-		4F5A7B5B26849D8700D0D38E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4F5ABD82267BE11600EBCB41 /* DominantObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominantObjectViewController.swift; sourceTree = "<group>"; };
 		4F66C4322680A8E500C7CA70 /* LogoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoService.swift; sourceTree = "<group>"; };
 		4F66C4342680AB0200C7CA70 /* LogoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewerViewController.swift; sourceTree = "<group>"; };
@@ -167,12 +153,6 @@
 		4F5A7B4E26849C4200D0D38E /* Chat App */ = {
 			isa = PBXGroup;
 			children = (
-				4F7BFE7B2684F5EC0035877A /* Login Register */,
-				4F5A7B5126849CBB00D0D38E /* ConversationsViewController.swift */,
-				4F5A7B5526849D0200D0D38E /* PhotoViewerViewController.swift */,
-				4F5A7B5726849D2900D0D38E /* VideoPlayerViewController.swift */,
-				4F5A7B5926849D4C00D0D38E /* NewConversationViewController.swift */,
-				4F5A7B5B26849D8700D0D38E /* ProfileViewController.swift */,
 			);
 			name = "Chat App";
 			sourceTree = "<group>";
@@ -338,15 +318,6 @@
 			name = "ML Models";
 			sourceTree = "<group>";
 		};
-		4F7BFE7B2684F5EC0035877A /* Login Register */ = {
-			isa = PBXGroup;
-			children = (
-				4F5A7B4F26849C7D00D0D38E /* LoginViewController.swift */,
-				4F5A7B5326849CE000D0D38E /* RegisterViewController.swift */,
-			);
-			name = "Login Register";
-			sourceTree = "<group>";
-		};
 		4FD2C4AA268520D400DF2B3F /* firebase App */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,13 +463,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F23AFC9267EC8F800EFC87D /* Contact.swift in Sources */,
-				4F5A7B5826849D2900D0D38E /* VideoPlayerViewController.swift in Sources */,
 				4F6709C0267B7C1800F49480 /* IMCViewController.swift in Sources */,
 				4F6D9425267BB5FA0031D8E7 /* TextEditorResultViewController.swift in Sources */,
 				4F059E8D267BC200009F5825 /* MNISTClassifier.mlmodel in Sources */,
 				4FD2C4AC268521AF00DF2B3F /* FirebaseAppViewController.swift in Sources */,
 				4F6873F0267A7C3C002D59A1 /* HomeViewController.swift in Sources */,
-				4F5A7B5C26849D8700D0D38E /* ProfileViewController.swift in Sources */,
 				4F059E89267BC1DC009F5825 /* MobileNetV2.mlmodel in Sources */,
 				4FF2D930267BE52C005A153B /* NumberRecognizerViewController.swift in Sources */,
 				4FD2C4A9268520B700DF2B3F /* Person.swift in Sources */,
@@ -508,7 +477,6 @@
 				4F5ABD83267BE11600EBCB41 /* DominantObjectViewController.swift in Sources */,
 				4F059E94267BC56B009F5825 /* IsADesktopViewController.swift in Sources */,
 				4F6709C3267B7C8500F49480 /* IMC.swift in Sources */,
-				4F5A7B5226849CBB00D0D38E /* ConversationsViewController.swift in Sources */,
 				4F6873DE267A7547002D59A1 /* ViewController.swift in Sources */,
 				4FD2C4B12685535A00DF2B3F /* AddFirebaseViewController.swift in Sources */,
 				4F6709C5267B7CDF00F49480 /* IMCResultViewController.swift in Sources */,
@@ -517,19 +485,15 @@
 				4F6873F9267A9021002D59A1 /* backgroundService.swift in Sources */,
 				4F32113A268A319B00FF0C75 /* CustomTableViewCell.swift in Sources */,
 				4F6D941F267B94B40031D8E7 /* MapViewController.swift in Sources */,
-				4F5A7B5026849C7D00D0D38E /* LoginViewController.swift in Sources */,
 				4FD2C4AF268552BC00DF2B3F /* LoginFirebaseViewController.swift in Sources */,
 				4F66C4332680A8E500C7CA70 /* LogoService.swift in Sources */,
 				4F6D1E43267B69FB00E5ED50 /* TimerViewController.swift in Sources */,
-				4F5A7B5A26849D4C00D0D38E /* NewConversationViewController.swift in Sources */,
 				4F66C4352680AB0200C7CA70 /* LogoViewerViewController.swift in Sources */,
 				4F6873DA267A7547002D59A1 /* AppDelegate.swift in Sources */,
 				4F059E96267BDD71009F5825 /* ObjectNameViewController.swift in Sources */,
 				4FBF78EB267ECACE00EF5F5B /* AddContactViewController.swift in Sources */,
 				4F059E8B267BC1E7009F5825 /* Inceptionv3.mlmodel in Sources */,
-				4F5A7B5426849CE000D0D38E /* RegisterViewController.swift in Sources */,
 				4F6873DC267A7547002D59A1 /* SceneDelegate.swift in Sources */,
-				4F5A7B5626849D0200D0D38E /* PhotoViewerViewController.swift in Sources */,
 				4F6873EE267A78AB002D59A1 /* SideMenuCell.swift in Sources */,
 				4F059E91267BC49A009F5825 /* ObjectRecognitionHomeViewController.swift in Sources */,
 				4F23AFC7267EC87400EFC87D /* ContactsViewController.swift in Sources */,
